@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+.watchnow{
+    background-image: url("public/prayer.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 90%;
+    margin-left: 5%;
+}
+.now h1{
+    position: relative;
+    top: 150px;
+    color: rgb(155, 13, 119);
+    font-size: 50px;
+    font-weight: 700;
+    margin-left: 55%;
+}
+.now p{
+    position: relative;
+    top: 170px;
+    color: rgb(39, 131, 16);
+    font-size: 25px;
+    margin-left: 45%;
+    font-weight: 600;
+}
+.video1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+.video1 iframe{
+    box-shadow: none;
+    border: none;
+}
+.footer{
+    margin-top: 2%;
+}
+.footer{
+    height: 40vh;
+    background-color: rgb(204, 175, 231);
+  }
+  .foots{
+    background-color: rgb(150, 147, 147);
+    width: 92vw;
+    height: 30vh;
+    margin-left: 3%;
+
+  }
+  .foot{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  h4{
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .reach{
+    margin-top: 2%; 
+    font-size: 20px;
+  }
+  .reach p {
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between icon and text */
+  }
+
+  .reach p i {
+    font-size: 20px; /* Adjust icon size */
+    color: #000; /* Adjust icon color */
+  }
+
+  .reach p span {
+    font-size: 18px; /* Adjust text size */
+    color: #000; /* Adjust text color */
+  }
+.pages{
+    margin-top: 2%; 
+}
+.pages a{
+    margin-top: 4%; 
+    color: #000;
+    font-size: 20px;
+    font-weight:100;
+
+
+}  
+li{
+    list-style: none;
+}
+.icons h4{
+    margin-top: 20%; 
+    margin-left: 18%;
+}
+hr{
+    background-color: whitesmoke;
+    margin-top: 2%;
+}
+.copy{
+display: flex;
+justify-content: space-between;
+margin-top: 1%;
+}

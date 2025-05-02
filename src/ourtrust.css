@@ -1,0 +1,304 @@
+:root{
+    --secondary-color: #2ecc71;
+    --background-color: #fff;
+    --background-color2: #bedcf0;
+    --text-color: #090909;
+    --icon-color:red;
+    --background-color4: rgba(176, 172, 172, 0.2);
+    --background-color5: rgba(188, 185, 185, 0.4);
+    --background-color6: #c98365;
+    --background-color7: whitesmoke;
+    --icon-color1: linear-gradient(
+        45deg,
+        #833ab4,
+        #c13584,
+        #e1306c,
+        #fd1d1d,
+        #f56040,
+        #fcaf45
+      );
+}
+
+body{
+    background-color:var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+.church img {
+    width: 100px;
+    height: 100px;
+}
+.logoandmenu{
+    display: flex;
+}
+.logo{
+    display: flex;
+}
+.logo h1{
+    font-size: 1.8rem;
+    margin-top:5%;
+    color: red;
+}
+em{
+    font-size: 1.4rem;
+    color: #294ce9;
+    font-weight: 900;
+    font-family: var(--font-family);
+}
+.logo span{
+    font-size: 1rem;
+    color: #000;
+}
+.church {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: center;
+    background-color: var(--background-color);
+    }
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6%;
+    width: 150%;
+    margin-left: -20%;
+}
+li{
+    font-size: 1.2rem;
+
+}
+a{
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 20px;
+
+}
+
+#btnm1 {
+  --secondary-color: #fff;
+    --hover-color: #fff;
+    --text-color: #000;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-size: 15px;
+    font-weight:700;
+  }
+  
+  #btnm1 .arrow1-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #btnm1.arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  #btnm1 .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--text-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  #btnm1 :hover {
+    background-color: var(--hover-color);
+    color: var(--text-color);
+  }
+  
+  #btnm1 :hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  #btnm1:hover .arrow1:before {
+    right: 0;
+    color: var(--text-color);
+  }
+  .lock6{
+    background-image: url("public/celebration.avif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 80vw;
+    margin-left: 10%;
+    margin-top: 3%;
+    filter:contrast(0.8);
+    border-radius: 10px;
+  }
+  .lock6 h1{
+    text-align: center;
+    padding-top: 20px;
+    position: absolute;
+    left: 38%;
+    font-weight: 800;
+    font-size: 65px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-top: 4%;
+    color: rgb(89, 2, 100);
+}
+
+.pray {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.prayers{
+    background-color: var(--background-color2);
+    margin-top: 5%;
+    padding-bottom: 3%;
+
+}
+.prayers h1{
+    font-size: 2rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.pray1 {
+    flex: 1 1 calc(20% - 25px); /* Four cards per row with space between */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:white;
+    border-radius: 10px;
+    padding: 10px; /* Reduced padding for smaller size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+
+}
+.pray {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    margin-top: 5%;
+}
+
+
+.pray1 img {
+    width: 80%;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.pray1 h3 {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.pray1 button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pray1 button:hover {
+    background-color: darkgreen;
+}
+.footer{
+    height: 40vh;
+    background-color: rgb(204, 175, 231);
+  }
+  .foots{
+    background-color: rgb(248, 243, 243);
+    width: 92vw;
+    height: 30vh;
+    margin-left: 3%;
+
+  }
+  .foot{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  h4{
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .reach{
+    margin-top: 2%; 
+    font-size: 20px;
+  }
+  .reach p {
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between icon and text */
+  }
+
+  .reach p i {
+    font-size: 20px; /* Adjust icon size */
+    color: #000; /* Adjust icon color */
+  }
+
+  .reach p span {
+    font-size: 18px; /* Adjust text size */
+    color: #000; /* Adjust text color */
+  }
+.pages{
+    margin-top: 2%; 
+}
+.pages a{
+    margin-top: 4%; 
+    color: #000;
+    font-size: 20px;
+    font-weight:100;
+
+
+}  
+li{
+    list-style: none;
+}
+.icons h4{
+    margin-top: 20%; 
+    margin-left: 18%;
+}
+hr{
+    background-color: whitesmoke;
+    margin-top: 2%;
+}
+.copy{
+display: flex;
+justify-content: space-between;
+margin-top: 1%;
+}

@@ -1,0 +1,83 @@
+/* Paymentform.css */
+
+.payment-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+    margin-top: 12%;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.payment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.paying-to {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.organization-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.country-code {
+    font-size: 14px;
+    color: #666;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}

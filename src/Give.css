@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+.give{
+    background-image: url("public/donation.avif");
+    height: 80vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+} 
+
+.donation-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height: 420px;
+    position: relative;
+    top: 90px;
+    left: 15%;
+}
+#para1{
+    margin-top: 30%;
+    font-size: 20px;
+    color: rgb(240, 34, 34);
+    font-weight: 700;
+}
+#para2{
+    margin-top: 2%;
+    font-size: 20px;
+    color: rgb(18, 16, 160);
+    font-weight: 800;
+}
+#para3{
+    margin-top: -15%;
+    margin-left: 55%;
+}
+
+
+.donation-form h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.donation-form .dropdown select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.donation-form h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.donation-form .amount-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.donation-form .amount-options button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.donation-form .amount-options button:hover {
+    background-color: #0056b3;
+}
+
+.donation-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.donation-form .proceed-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.donation-form .proceed-button:hover {
+    background-color: #218838;
+}
+.qr-section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+.qr-section h3{
+     font-size: 50px;
+     font-weight: 700;
+        color: rgb(17, 16, 110);
+        margin-top: 2%;
+}
+.qr-section img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.bank-details {
+    text-align: center;
+    margin-top: 8%;
+
+}
+
+.bank-details h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #701945;
+    margin-bottom: 15px;
+}
+
+.bank-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+#straight{
+    font-size: 30px;
+    color: #a2a7a2;
+}
+.bank-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.bank-info span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
