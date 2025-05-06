@@ -1022,127 +1022,139 @@ margin-top: 1%;
     font-size: 15px;
     color: #000;
 }
-@media (max-width: 768px) {
-  .church img {
-    width: 70px;
-    height: 70px;
+
+
+@media screen and (max-width: 425px) {
+  /* General adjustments */
+  .main {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .logoandmenu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 80px;
+    height: auto;
   }
 
   .logo h1 {
-    font-size: 1rem;
-    margin-top: 5%;
+    font-size: 1.2rem;
+    text-align: center;
   }
 
-  .logo span {
-    font-size: 0.8rem;
+  .head ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    align-items: center;
   }
 
-  ul {
-    gap: 5%;
-    width: 100%;
-    margin-left: 0;
+  .head ul li {
+    list-style: none;
+    margin: 5px 0;
   }
 
-  li {
-    font-size: 1rem;
-  }
-
-  a {
-    font-size: 16px;
-  }
-  .bgvideo{
-    height: 40%;
-  }
-
-  .content1 {
-    font-size: 0.4em;
-  }
 
   .content1 h1 {
-    font-size: 4rem;
-    margin-top: 20%;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
   }
 
   .homecontent2 {
     flex-direction: column;
-    margin-top: 80%;
-    gap: 5%;
-    margin-left: 5%;
-    width: 90%;
-    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .head1, .head2 {
+    width: 100%;
+    padding: 10px;
   }
 
   .head2 img {
-    width: 200px;
-    height: 200px;
-    margin-top: 10%;
-    margin-left: 30%;
-  }
-
-  .im {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin-left: 5%;
-    width: 90%;
+    width: 80%;
+    max-width: 300px;
   }
 
   .homecontent3 {
-    width: 95%;
-    margin-left: 2.5%;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .vd iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .content2 h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .marque .im {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .marque img,
+  .marque video {
+    width: 150px;
     height: auto;
   }
 
   .cards {
-    width: 95%;
-    margin: 5% 2.5%;
-    height: auto;
+    padding: 10px;
   }
-  .cards h1 {
-    font-size: px;
-    margin-left: 0;
+
+  .card1 {
+    flex-direction: column;
+    align-items: center;
   }
 
   .card {
     width: 90%;
-    margin: 5% auto;
+    margin-bottom: 20px;
   }
 
   .footer {
-    height: 40vh;
+    text-align: center;
   }
-  .foots {
-    width: 95%;
-    height: auto;
-    margin-left: 0;
-  }
+
   .foot {
     flex-direction: column;
-    align-items: center;
+    gap: 20px;
   }
-  h4 {
-    font-size: 20px;
+
+  .icons ul {
+    justify-content: center;
   }
-  .reach {
-    font-size: 16px;
+
+  #btnm1 {
+    width: 90%;
+    margin: 10px auto;
   }
-  .pages{
-    margin-left: -25%;
-  }
-  .pages p {
-    font-size: 16px;
-  }
-  .icons{
-    margin-left: -25%;
-  }
-  .icons h4 {
-    margin-top: 10%;
-    margin-left: 0;
-    text-align: center;
-    width: 120PX;
-  }
-  .copy {
+
+  .tooltip-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2%;
+  }
+
+  .tooltip-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .social-icon {
+    margin: 0 5px;
   }
 }

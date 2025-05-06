@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 
 
-
 function Church() {
   function handleLocationClick() {
     window.location.href = '/locations'; // Redirect to the locations page
