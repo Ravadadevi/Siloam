@@ -146,7 +146,7 @@ justify-content: space-evenly;
     color: #333;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 10%;
+    margin-top: 3%;
     margin-left: 6%;
     height: 10vh;
     width: 80%;
@@ -549,131 +549,285 @@ justify-content: space-between;
 margin-top: 1%;
 }
 
-@media (max-width: 768px) {
-  .about1 {
-    height: 40vh;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .cart, .cart1 {
-    width: 80%;
-    height: auto;
-    margin: 20px auto;
-  }
-
-  .church5 h1 {
-    font-size: 40px;
-    font-weight: 800;
-    margin-top: -50%;
-  }
-  .church5 p{
-    display: none;
-  }
-  .img1 {
-    width: 100%;
-    height: auto;
-  }
-
-  .title1 img, .title4 img {
-    width: 150px;
-    height: 150px;
-  }
-  .title4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 7%;
-  }
-  .title5 p{
-    padding: 10%;
-    margin-top: -8%;
-  }
-
-  .title4 img {
-    order: -1;
-  }
-
-  .title5 {
-    order: 1;
-  }
-  .title, .title3 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .title1, .title4 h2 {
-    margin-left: -5%;
-  }
-  .cardss {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-  .cardss strong, .cardss1 strong, .cardss2 strong {
-    font-size: 40px;
-  }
-  .cardes, .cardes1, .cardes2 {
-    width: 70%;
-    height: 30vh;
-    margin-top: 20px;
-  }
-  .cardes span, .cardes1 span, .cardes2 span {
-    font-size: 150px;
-    margin-top: 15%;
-  }
-.cot{
-  margin-top: -45%;
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-top: 10px;
 }
-  .cot, .cor {
-    height: auto;
-    padding: 20px;
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Hide menu on mobile by default */
+.head {
+  display: flex;
+  gap: 20px;
+}
+
+.head ul {
+  display: flex;
+  gap: 5px;
+  list-style: none;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 425px) {
+  .hamburger {
+    display: flex;
   }
 
-  .cot h1, .cor h1 {
-    font-size: 30px;
+  .head {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    width: 80%;
+    position: absolute;
+    top: 100px; /* Adjust based on your header height */
+    left: 0;
+    z-index: 1000;
   }
 
-  .example-2 {
-    flex-direction: column;
-    gap: 10px;
+  .head.active {
+    display: flex;
   }
-  .footer {
-    height: auto;
-  }
-  .foots {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-  }
-  .foot {
+
+  .head ul {
     flex-direction: column;
     align-items: center;
+    padding: 10px 0;
   }
-  h4 {
-    font-size: 20px;
+
+  .head ul li {
+    margin: 10px 0;
+
   }
-  .reach {
-    font-size: 16px;
+a{
+  font-size: 1px;
+ gap : 10px;
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+  #btnm1 {
+    margin-top: 10px;
   }
-  .pages{
-    margin-left: -25%;
-  }
-  .pages p {
-    font-size: 16px;
-  }
-  .icons{
-    margin-left: -25%;
-  }
-  .icons h4 {
-    margin-top: 10%;
-    margin-left: 0;
-    text-align: center;
-    width: 120PX;
-  }
-  .copy {
-    flex-direction: column;
+
+  .logoandmenu {
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 2%;
   }
+  .logo h1 {
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0;
+    color: red;
+    text-align: left;
+    margin-left: -10%;
+  }
+
+  .logo em {
+    font-size: 1rem;
+    color: #294ce9;
+    font-weight: 900;
+    font-family: var(--font-family);
+    display: inline;
+  }
+
+  .logo span {
+    font-size: 1rem;
+    color: #000;
+    display: inline;
+    margin-left:12%;
+
+  }
+  .logo img {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+  }
+
+  
+#btnm1 {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+.about1{
+  background-image: url("public/holy-week-celebration.jpg.crdownload");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  filter: brightness(90%);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+  background-position: no-repeat;
+  background-size: cover;
+}
+
+.church5 h1 {
+  font-size: 35px;
+  margin-top: -70%;
+}
+
+.church5 p {
+  font-size: 16px;
+  display: none;
+}
+.cot{
+margin-top: -30%;
+} 
+.cot h1{
+font-size: 35px;
+
+}
+.cart{
+  width: 90%;
+  height: 60vh;
+}
+.img1 {
+  width: 100%;
+  height: auto;
+}
+
+.title1 img, .title4 img {
+  width: 150px;
+  height: 150px;
+}
+.title4 {
+   flex-direction: column;
+    margin-top: 7%;
+    margin: 5px auto;
+}
+.title2 p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 10px 0;
+  text-align: justify;
+  padding: 0 20px;
+  color: #333;
+}
+.cart1{
+  width: 90%;
+  height: 100vh;
+  margin-left: 5%;
+}
+.title5 p {
+  font-size: 15px;
+  line-height: 1.6;
+   letter-spacing: 2px;
+  text-align: center;
+  color: #333;
+}
+.title5 .ramya{
+  font-size: 15px;
+  line-height: 1.9;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  text-align: center;  
+}
+
+.title4 img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 1.7%;
+  order: -1;
+
+}
+.title4 p{
+  margin-left: 2%;
+}
+
+.title5 {
+  order: 1;
+}
+.title {
+  flex-direction: column;
+  margin-top: 13%;
+}
+.title3 {
+  flex-direction: column;
+  margin-top: -40%;
+}
+
+.title1, .title4 h2 {
+  margin-left: -5%;
+}
+.cardss {
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.cardss strong, .cardss1 strong, .cardss2 strong {
+  font-size: 40px;
+}
+.cardes, .cardes1, .cardes2 {
+  width: 70%;
+  height: 30vh;
+  margin-top: 20px;
+}
+.cardes span, .cardes1 span, .cardes2 span {
+  font-size: 150px;
+  margin-top: 15%;
+}
+
+.footer {
+  height: auto;
+  padding: 20px;
+}
+
+.foots {
+  flex-direction: column;
+  align-items: center;
+}
+
+.foot {
+  flex-direction: column;
+  align-items: center;
+}
+
+.reach, .pages, .icons {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.reach p {
+  font-size: 14px;
+}
+
+.pages a {
+  font-size: 14px;
+}
+
+.icons ul {
+  justify-content: center;
+}
+
+.icons h4 {
+  margin: 10px 0;
+}
+
+.copy {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.copy p {
+  font-size: 12px;
+  margin: 5px 0;
+}
 }

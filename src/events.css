@@ -332,40 +332,4 @@ margin-top: 1%;
     font-size: 0.75rem;
   }
 
-  .footer {
-    height: 40vh;
-  }
-  .foots {
-    width: 90%;
-    height: auto;
-    margin-left: 0;
-  }
-  .foot {
-    display: flex;
-    align-items: center;
-  }
-  h4 {
-    font-size: 20px;
-  }
-  .reach {
-    font-size: 16px;
-    margin-left: -8%;
-  }
-  .pages p {
-    font-size: 16px;
-  }
-  .icons{
-    margin-left: -25%;
-  }
-  .icons h4 {
-    margin-top: 10%;
-    margin-left: 0;
-    text-align: center;
-    width: 120PX;
-  }
-  .copy {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2%;
-  }
 }

@@ -1,48 +1,60 @@
 import React from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
-
+import { useState } from 'react';
 
 
 function Church() {
-  function handleLocationClick() {
-    window.location.href = '/locations'; // Redirect to the locations page
-  }
+
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
   
 
   return (
     <>
       {/* church logo and menu starts here */}
       <div className="main">
-        <div className="church">
-          <div className="logoandmenu">
-            <div className="logo">
-               <img src="/logo.jpeg" alt="Church Logo" />
-              <h1>
-                SILOAM <em>CHRIST MINISTRIES </em> <br />
-                <span>Come And Grow With Us</span>
-              </h1>
-            </div>
-          </div>
-          <div className="head">
-            <ul>
-            <li><a href="/home">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/team">Team</a></li>
-            <li><a href="/location">Location</a></li>
-            <li><a href="/ourtrust">Our Programs</a></li>
-            <li><a href="/events">Events</a></li>
-            </ul>
-          </div>
-          <button id='btnm1' onClick={() => window.location.href = '/give'}>
-            Give Now
-            <div className="arrow1-wrapper">
-              <div className="arrow"></div>
-
-              
-            </div>
-          </button>
+      <div className="church">
+      <div className="logoandmenu">
+        <div className="logo">
+          <img src="/logo.jpeg" alt="Church Logo" />
+          <h1>
+            SILOAM <em>CHRIST MINISTRIES </em> <br />
+            <span>Come And Grow With Us</span>
+          </h1>
         </div>
+
+        {/* Hamburger Icon */}
+        <div className="hamburger" onClick={toggleMobileMenu}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
+      </div>
+
+      {/* Navigation Menu */}
+      <div className={`head ${isMobileMenuOpen ? 'active' : ''}`}>
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/team">Team</a></li>
+          <li><a href="/location">Location</a></li>
+          <li><a href="/ourtrust">Our Programs</a></li>
+          <li><a href="/events">Events</a></li>
+          <button id='btnm1' onClick={() => window.location.href = '/give'}>
+        Give Now
+        <div className="arrow1-wrapper">
+          <div className="arrow"></div>
+        </div>
+      </button>
+        </ul>
+      </div>
+
+    </div>
+  
         {/* church logo and menu ends here */}
 
         {/* home page starts here */}
@@ -89,9 +101,11 @@ function Church() {
           <div className="content2">
             <h1>Watch joel paul’s message</h1>  <br />
            <p>Watch the latest powerful message from the man of god <br /> and be blessed and empowered in your spirit.</p> <br />
+     <div className="shares">
            <Link to="/watchnow" className="btnm">
       Watch Now<span className="btnm-border"></span>
-    </Link><div class="tooltip-container">
+    </Link>
+    <div class="tooltip-container">
   <div class="button-content">
     <span class="text5">Share</span>
     <svg
@@ -167,7 +181,7 @@ function Church() {
     </div>
   </div>
 </div>
-
+</div>
 
       </div>
          </div>
@@ -236,7 +250,6 @@ function Church() {
         {/* home page ends here */}
 
 
-
         <div className="footer">
             <br /> 
             <div className="foots">
@@ -257,7 +270,7 @@ function Church() {
                 </div>
 
                 <div className="icons">
-                    <h4>Follow us</h4>
+                    <h4>Follow </h4>
 <ul className="example-2">
  
   <li className="icon-content">
