@@ -1,41 +1,57 @@
 import React from 'react';
 import './Team.css';
+import { useState } from 'react';
 
 
 function Team() {
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
+    const toggleMobileMenu = () => {
+      setMobileMenuOpen(!isMobileMenuOpen);
+    };
+    
+  
 
 return(
     <>
-    <div className="main">
-    <div className="church">
+      {/* church logo and menu starts here */}
+      <div className="main">
+      <div className="church">
       <div className="logoandmenu">
         <div className="logo">
-           <img src="/logo.jpeg" alt="Church Logo" />
+          <img src="/logo.jpeg" alt="Church Logo" />
           <h1>
-          SILOAM <em>CHRIST MINISTRIES </em> <br />
-          <span>Come And Grow With Us</span>
+            SILOAM <em>CHRIST MINISTRIES </em> <br />
+            <span>Come And Grow With Us</span>
           </h1>
         </div>
-      </div>
-      <div className="head">
-            <ul>
-            <li><a href="/home">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/team">Team</a></li>
-            <li><a href="/location">Location</a></li>
-            <li><a href="/ourtrust">Our Programs</a></li>
-            <li><a href="/events">Events</a></li>
-            </ul>
-          </div>
-          <button id='btnm1' onClick={() => window.location.href = '/give'}>
-            Give Now
-            <div className="arrow1-wrapper">
-              <div className="arrow"></div>
 
-              
-            </div>
-          </button>
+        {/* Hamburger Icon */}
+        <div className="hamburger" onClick={toggleMobileMenu}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
         </div>
+      </div>
+
+      {/* Navigation Menu */}
+      <div className={`head ${isMobileMenuOpen ? 'active' : ''}`}>
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/team">Team</a></li>
+          <li><a href="/location">Location</a></li>
+          <li><a href="/ourtrust">Programs</a></li>
+          <li><a href="/events">Events</a></li>
+          <button id='btnm1' onClick={() => window.location.href = '/give'}>
+        Give Now
+      </button>
+        </ul>
+      </div>
+
+    </div>
+  
+        {/* church logo and menu ends here */}
 
  <div className="team">
   <br /> 
@@ -101,6 +117,7 @@ return(
             <li><a href="/about">About</a></li>
             <li><a href="/team">Team</a></li>
             <li><a href="/location">Location</a></li>
+            <li><a href="/ourtrust"> Programs</a></li>
             <li><a href="/events">Events</a></li>
                 </div>
 

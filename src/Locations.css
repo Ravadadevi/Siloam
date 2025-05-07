@@ -49,13 +49,16 @@
   color: white;
 
 }
+.tie{
+  background-color: #c98365;
+
+}
 .tie h2{
     font-size: 50px;
     font-weight: 800;
     color: white;
     text-align: center;
     margin-top: 3%;
-    background-color: #c98365;
     padding-top: 3%;
 
 }
@@ -68,7 +71,6 @@ iframe{
     font-weight: 800;
     color: white;
     text-align: center;
-    background-color: #c98365;
     padding-top: 1%;
 }
 
@@ -299,5 +301,93 @@ margin-top: 1%;
   .example-2 .icon-content a svg {
     width: 20px;
     height: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .lock {
+    height: 30vh;
+    width: 95vw;
+    margin-left: 2.5%;
+    margin-top: 1%;
+  }
+  .locked {
+    height: 35vh;
+  }
+  .locked h1 {
+    font-size: 40px;
+    margin-top: 15%;
+    font-weight: 800;
+    margin-left: 5%;
+  }
+  .tie{
+    height: 90vh;
+  }
+  .tie h2{
+    font-size: 30px;
+  }
+  .tie h5{
+    font-size: 25px;
+  }
+
+  .map {
+    font-size: 18px;
+    margin-top: 1%;
+  }
+  .cars1 img {
+    width: 350px;
+    height: 250px;
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+  .type {
+    flex-direction: column;
+    height: auto;
+    margin-top: 3%;
+  }
+  .text {
+    height: 30vh;
+    margin-top: 3%;
+  }
+  .text h1 {
+    font-size: 25px;
+    margin-top: 1%;
+  }
+  .example-2 .icon-content a {
+    width: 35px;
+    height: 35px;
+  }
+  .example-2 .icon-content a svg {
+    width: 18px;
+    height: 18px;
+  }
+  .footer {
+    height: auto;
+  }
+  .foots {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+  .foot {
+    flex-direction: column;
+    align-items: center;
+  }
+  .reach, .pages, .icons {
+    margin-top: 2%;
+    text-align: center;
+  }
+  .reach p {
+    font-size: 16px;
+  }
+  .pages a {
+    font-size: 18px;
+  }
+  .icons h4 {
+    margin-top: 10%;
+  }
+  .copy {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2%;
   }
 }

@@ -59,45 +59,55 @@ em{
     align-items: center;
     background-color: var(--background-color);
     }
-ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 6%;
-    width: 150%;
-    margin-left: -20%;
+.head ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
-li{
-    font-size: 1.2rem;
 
+.head li {
+  font-size: 1rem;
+  font-weight: 600;
 }
-a{
+
+.head a {
   color: var(--text-color);
   font-weight: 700;
-  font-size: 20px;
-
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 5px;
 }
+
 
 #btnm1 {
   --secondary-color: #fff;
-    --hover-color: #fff;
-    --text-color: #000;
-    --arrow-width: 10px;
-    --arrow-stroke: 2px;
-    box-sizing: border-box;
-    border: 1px solid var(--primary-color);
-    border-radius: 20px;
-    color: var(--secondary-color);
-    padding: 1em 1.8em;
-    background: var(--primary-color);
-    display: flex;
-    transition: 0.2s background;
-    align-items: center;
-    gap: 0.6em;
-    font-size: 15px;
-    font-weight:700;
-    margin-left: 10%;
-  }
+  --hover-color: #27ae60;
+  --text-color: #fff;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 20px;
+  color: var(--text-color);
+  padding: 0.8em 1.5em;
+  background: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#btnm1:hover {
+  transform: translateY(-2px);
+}
   
   #btnm1 .arrow1-wrapper {
     display: flex;
@@ -1255,6 +1265,25 @@ iframe{
   box-shadow: 0 8px 16px var(--background-color4);
   margin-left: -3%;
 }
+.footer{
+  height: 40vh;
+  background-color: rgb(204, 175, 231);
+
+}
+.foots{
+  background-color: whitesmoke;
+  width: 92vw;
+  height: 30vh;
+  margin-left: 3%;
+
+}
+.foot{
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
 .reach h4,
 .pages h4,
 .icons h4{
@@ -1273,13 +1302,3 @@ iframe{
 }
 
 }
-
-
-
-
-
-
-
-
-
-

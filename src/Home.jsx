@@ -42,13 +42,10 @@ function Church() {
           <li><a href="/about">About</a></li>
           <li><a href="/team">Team</a></li>
           <li><a href="/location">Location</a></li>
-          <li><a href="/ourtrust">Our Programs</a></li>
+          <li><a href="/ourtrust"> Programs</a></li>
           <li><a href="/events">Events</a></li>
           <button id='btnm1' onClick={() => window.location.href = '/give'}>
         Give Now
-        <div className="arrow1-wrapper">
-          <div className="arrow"></div>
-        </div>
       </button>
         </ul>
       </div>
@@ -266,6 +263,7 @@ function Church() {
             <li><a href="/about">About</a></li>
             <li><a href="/team">Team</a></li>
             <li><a href="/location">Location</a></li>
+            <li><a href="/ourtrust"> Programs</a></li>
             <li><a href="/events">Events</a></li>
                 </div>
 

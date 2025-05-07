@@ -5,6 +5,7 @@
     text-decoration: none;
 }
 
+
 .about1{
     background-image: url("public/holy-week-celebration.jpg.crdownload");
     background-position: center;
@@ -189,7 +190,7 @@ justify-content: space-evenly;
   }
   
   
-  .cardes > :not(span) {
+  .cardes > :not(p) {
     transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1);
   }
   
@@ -200,7 +201,7 @@ justify-content: space-evenly;
     color: white;
   }
   
-  .cardes span {
+  .cardes p {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -215,7 +216,7 @@ justify-content: space-evenly;
     margin-top: 5%;
   }
   
-  .cardes:hover span {
+  .cardes:hover p {
     top: 0;
     font-size: 15px;
   }
@@ -259,7 +260,7 @@ justify-content: space-evenly;
   }
   
   
-  .cardes1 > :not(span) {
+  .cardes1 > :not(p) {
     transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1);
   }
   
@@ -270,7 +271,7 @@ justify-content: space-evenly;
     color: white;
   }
   
-  .cardes1 span {
+  .cardes1 p {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -285,7 +286,7 @@ justify-content: space-evenly;
     margin-top: 5%;
   }
   
-  .cardes1:hover span {
+  .cardes1:hover p {
     top: 0;
     font-size: 15px;
   }
@@ -328,7 +329,7 @@ justify-content: space-evenly;
   }
   
   
-  .cardes2 > :not(span) {
+  .cardes2 > :not(p) {
     transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1);
   }
   
@@ -339,7 +340,7 @@ justify-content: space-evenly;
     color: white;
   }
   
-  .cardes2 span {
+  .cardes2 p {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -354,7 +355,7 @@ justify-content: space-evenly;
     margin-top: 5%;
   }
   
-  .cardes2:hover span {
+  .cardes2:hover p {
     top: 0;
     font-size: 15px;
   }
@@ -694,7 +695,7 @@ font-size: 35px;
 }
 .cart{
   width: 90%;
-  height: 60vh;
+  height: 65vh;
 }
 .img1 {
   width: 100%;
@@ -720,7 +721,7 @@ font-size: 35px;
 }
 .cart1{
   width: 90%;
-  height: 100vh;
+  height: 90vh;
   margin-left: 5%;
 }
 .title5 p {
@@ -760,7 +761,7 @@ font-size: 35px;
 }
 .title3 {
   flex-direction: column;
-  margin-top: -40%;
+  margin-top: -20%;
 }
 
 .title1, .title4 h2 {
@@ -775,59 +776,50 @@ font-size: 35px;
   font-size: 40px;
 }
 .cardes, .cardes1, .cardes2 {
-  width: 70%;
-  height: 30vh;
+  width: 80%;
+  height: 35vh;
   margin-top: 20px;
 }
-.cardes span, .cardes1 span, .cardes2 span {
-  font-size: 150px;
-  margin-top: 15%;
+.cardes p, .cardes1 p, .cardes2 p {
+font-size: 10px;
+}
+.cor h1 {
+  font-size: 30px;
 }
 
 .footer {
   height: auto;
-  padding: 20px;
 }
 
 .foots {
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-left: 0;
 }
 
 .foot {
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
 
 .reach, .pages, .icons {
-  margin: 10px 0;
   text-align: center;
 }
 
 .reach p {
-  font-size: 14px;
-}
-
-.pages a {
-  font-size: 14px;
-}
-
-.icons ul {
-  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .icons h4 {
-  margin: 10px 0;
+  margin-top: 10%;
+  margin-left: 0;
 }
 
 .copy {
   flex-direction: column;
-  align-items: center;
   text-align: center;
-}
-
-.copy p {
-  font-size: 12px;
-  margin: 5px 0;
+  gap: 10px;
 }
 }

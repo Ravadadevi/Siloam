@@ -166,3 +166,139 @@
     font-weight: 600;
     color: #333;
 }
+.hooms{
+    margin-left: 25%;
+    margin-top: 2%;
+}
+.give .hoom {
+    margin-top: 10%;
+    font-size: 35px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+}
+
+.hooms .arrow-wrapper {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.hooms .arrow {
+    width: 10px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(140deg);
+    transition: 0.2s;
+}
+
+.hooms .hoom {
+    display: inline-flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+
+@media (max-width: 425px) {
+    .give {
+        height: 62vh;
+        border-radius: 5px;
+    }
+
+    .donation-form {
+        max-width: 90%;
+        padding: 15px;
+        top: 30px;
+        left: 5%;
+        height: auto;
+    }
+
+    .donation-form h2 {
+        font-size: 20px;
+    }
+
+    .donation-form .dropdown select {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .donation-form h3 {
+        font-size: 16px;
+    }
+
+    .donation-form .amount-options button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .donation-form input[type="number"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .donation-form .proceed-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    .sec{
+        margin-left: 5%;
+    }
+
+    .qr-section {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .qr-section h3 {
+        font-size: 20px;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .qr-section img {
+        width: 150px;
+        height: 150px;
+        margin-top: 5%;
+    }
+
+    .bank-details {
+        margin-top: 10%;
+    }
+
+    .bank-details h3 {
+        font-size: 24px;
+    }
+
+    .bank-info {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .bank-info span {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .reach h4, .pages h4, .icons h4 {
+        font-size: 16px;
+    }
+
+    .reach p, .pages li, .icons ul {
+        font-size: 14px;
+    }
+
+    .copy p {
+        font-size: 12px;
+        text-align: center;
+    }
+}

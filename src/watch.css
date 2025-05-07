@@ -108,3 +108,83 @@ display: flex;
 justify-content: space-between;
 margin-top: 1%;
 }
+/* Mobile Version (Max Width: 425px) */
+@media screen and (max-width: 425px) {
+
+  .watchnow {
+    height: 35vh;
+    width: 95%;
+    margin-left: 5%;
+  }
+
+  .now h1 {
+    font-size: 35px;
+    position: absolute;
+   margin-top: 5%;
+    margin-left: 40%;
+    color: rgb(155, 13, 119);
+  }
+
+  .now p {
+    font-size: 15px;
+    position: absolute;
+    margin-top: 15%;
+   margin-left: 10%;
+    color: white;
+    text-align: left;
+  }
+  .video1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video1 iframe {
+    width: 90%;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    height: auto;
+  }
+
+  .foots {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .foot {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reach, .pages, .icons {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .reach p {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .pages a {
+    font-size: 16px;
+  }
+
+  .icons h4 {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .copy {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .copy p {
+    margin: 5px 0;
+  }
+}

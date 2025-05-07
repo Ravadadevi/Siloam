@@ -4,6 +4,7 @@ import './Give.css';
 import { useState } from 'react';
 
 function Give() {
+
   const [amount, setAmount] = useState("");
 
   const handleAmountClick = (value) => {
@@ -12,38 +13,6 @@ function Give() {
 
   return (
     <>
-  {/* church logo and menu starts here */}
-  <div className="main">
-    <div className="church">
-      <div className="logoandmenu">
-        <div className="logo">
-          <img src="/logo.jpeg" alt="Church Logo" />
-          <h1>
-            SILOAM <em>CHRIST MINISTRIES</em> <br />
-            <span>Come And Grow With Us</span>
-          </h1>
-        </div>
-      </div>
-
-      <div className="head">
-        <ul>
-          <li><a href="/home">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/team">Team</a></li>
-          <li><a href="/location">Location</a></li>
-          <li><a href="/ourtrust">Our Programs</a></li>
-          <li><a href="/events">Events</a></li>
-        </ul>
-      </div>
-
-      <button id="btnm1" onClick={() => window.location.href = '/give'}>
-        Give Now
-        <div className="arrow1-wrapper">
-          <div className="arrow"></div>
-        </div>
-      </button>
-    </div>
-
     <div className="give">
       <div className="donation-form">
         <h2>GIVE NOW</h2>
@@ -88,6 +57,13 @@ function Give() {
           Proceed to Give
         </button>
       </div>
+      <div className="hooms">
+      <div className="arrow-wrapper">
+        <div className="arrow"></div>
+      </div>
+
+      <li className='hoom'><a href="/home">Home </a></li>
+</div>
     </div>
 
     <div className="qr-section">
@@ -203,10 +179,6 @@ function Give() {
 </div>
 
 
-
-
-
-  </div>
     </>
   );
 }

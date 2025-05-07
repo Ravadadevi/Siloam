@@ -38,13 +38,10 @@ return(
           <li><a href="/about">About</a></li>
           <li><a href="/team">Team</a></li>
           <li><a href="/location">Location</a></li>
-          <li><a href="/ourtrust">Our Programs</a></li>
+          <li><a href="/ourtrust"> Programs</a></li>
           <li><a href="/events">Events</a></li>
           <button id='btnm1' onClick={() => window.location.href = '/give'}>
         Give Now
-        <div className="arrow1-wrapper">
-          <div className="arrow"></div>
-        </div>
       </button>
         </ul>
       </div>
@@ -105,7 +102,7 @@ return(
 <div className="cardss">
 <div className="cardes">
   <strong> OUR BELIEFS </strong>
-  <span>God exists in three persons, but as the one true God: Father, Son and Holy Spirit (the Trinity) <br />
+  <p>God exists in three persons, but as the one true God: Father, Son and Holy Spirit (the Trinity) <br />
 In the Virgin birth <br />
 
 In the Sinful state of man <br />
@@ -116,26 +113,26 @@ In the death, burial and resurrection of Jesus Christ for our atonement (forgive
 In Baptism by total immersion for those confessing faith in Christ
 In the remembrance of Communion as thankfulness for the cross and looking forward to Jesus coming again <br />
 In the gifts and ministries of the Holy Spirit given to individuals, and to the church. That the Bible is the Inspired Word of God
-</span>
+</p>
 </div>
 
 <div className="cardes1">
   <strong> OUR MISSION</strong>
-  <span>“And I, when I am lifted up from the earth, will draw all people to myself.” <br />
+  <p>“And I, when I am lifted up from the earth, will draw all people to myself.” <br />
 – John 12:32 (ESV) <br />
 Renewal exists to lift up the name of Jesus. We lift Jesus up in our words, our actions, by our worship, by sharing the gospel, through the power and presence of the Holy Spirit, through acts of giving and acts of service. We lift up Jesus’ name in our Christian life example; wherever we are, whoever we are with. <br />
 “And His name will be the hope of all the world.” <br />
 – Matthew 12:21 (NLT) <br />
-The mission will never change. The Good News of the Gospel that Jesus saves will continue to be proclaimed and demonstrated in the heart of the nation through us. We do this so many can have the same hope that we have.</span>
+The mission will never change. The Good News of the Gospel that Jesus saves will continue to be proclaimed and demonstrated in the heart of the nation through us. We do this so many can have the same hope that we have.</p>
 </div>
 
 <div className="cardes2">
   <strong> OUR VISION</strong>
-  <span>Our Vision is to take the Gospel. From One. To Many. Our Vision is to see people across the heart of the nation growing in a relationship with Jesus. For people to be known and needed across our locations and online. <br />
+  <p>Our Vision is to take the Gospel. From One. To Many. Our Vision is to see people across the heart of the nation growing in a relationship with Jesus. For people to be known and needed across our locations and online. <br />
 Through worship gatherings, groups, community hubs, creative spaces, and life development. From One. To Many. Is also the Gospel itself. <br />
 “Jesus as one man, gave up His life for the salvation of many.” <br />
 – Romans 5:17 (NLT) <br />
-For the sin of this one man, Adam, caused death to rule over many. But even greater is God’s wonderful grace and his gift of righteousness, for all who receive it will live in triumph over sin and death through this one man, Jesus Christ.</span>
+For the sin of this one man, Adam, caused death to rule over many. But even greater is God’s wonderful grace and his gift of righteousness, for all who receive it will live in triumph over sin and death through this one man, Jesus Christ.</p>
 </div>
 
 </div>
@@ -162,6 +159,7 @@ For the sin of this one man, Adam, caused death to rule over many. But even grea
             <li><a href="/about">About</a></li>
             <li><a href="/team">Team</a></li>
             <li><a href="/location">Location</a></li>
+            <li><a href="/ourtrust"> Programs</a></li>
             <li><a href="/events">Events</a></li>
                 </div>
 
