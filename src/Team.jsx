@@ -1,6 +1,7 @@
 import React from 'react';
 import './Team.css';
 import { useState } from 'react';
+import Header from './Header';
 
 
 function Team() {
@@ -12,58 +13,22 @@ function Team() {
     
   
 
-return(
-    <>
+    return (
+      <>
       {/* church logo and menu starts here */}
       <div className="main">
-      <div className="church">
-      <div className="logoandmenu">
-        <div className="logo">
-          <img src="/logo.jpeg" alt="Church Logo" />
-          <h1>
-            SILOAM <em>CHRIST MINISTRIES </em> <br />
-            <span>Come And Grow With Us</span>
-          </h1>
-        </div>
-
-        {/* Hamburger Icon */}
-        <div className="hamburger" onClick={toggleMobileMenu}>
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </div>
-      </div>
-
-      {/* Navigation Menu */}
-      <div className={`head ${isMobileMenuOpen ? 'active' : ''}`}>
-        <ul>
-          <li><a href="/home">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/team">Team</a></li>
-          <li><a href="/location">Location</a></li>
-          <li><a href="/ourtrust">Programs</a></li>
-          <li><a href="/events">Events</a></li>
-          <button id='btnm1' onClick={() => window.location.href = '/give'}>
-        Give Now
-      </button>
-        </ul>
-      </div>
-
-    </div>
+     <Header/>
   
         {/* church logo and menu ends here */}
 
- <div className="team">
-  <br /> 
-    <div class="locks">   
-       <h1> OUR TEAM</h1>
-    </div>
+<div className="team">
+  <div className="locks"></div>
+  <h1>MEET OUR TEAM</h1>
 </div>
 
 
 <div className="ours">
   <br />
-  <h1>MY TEAM</h1>
 <div className="our">
   <div className="our1">
     <p>At the heart of our church is a dedicated team of leaders,<br /> pastors, and volunteers 
@@ -77,13 +42,12 @@ return(
       <p id='para'>Come and Join us and experience the love of christ that we have received...</p>
   </div>
 <div className='our2'>
-<img src="public/grop.jpeg" alt="" />
+<img src="/grop.jpeg" alt="" />
 </div>
 </div>
 </div>
    
 <div className="photos">
-<br /> <br />
 
   <h1>OUR TEAM</h1>
   <br />
@@ -100,18 +64,20 @@ return(
    where God wanted to me to be.”</h1>
 </div> 
 
-<br /> 
-<div className="footer">
+<br /> <br /> <br />
+        <div className="footer">
             <br /> 
-            <div className="foots">
-            <div class="foot">
+            <div className="foot">
+              <div>
+              <img src="/jesus.webp" alt="" />
+              </div>
                 <div className="reach">
                 <h4>Reach us</h4>
-                <p><i className='bx bxs-phone'></i>+91 9000832512 <br />   +91 996365687</p>
-                <p><i className='bx bx-envelope' ></i> joelvarigeli77@gmail.com</p>
+                <p><i className='bx bxs-phone'></i>+91 9000832512 <br />   +91 9963065687</p>
+                <p><i className='bx bx-envelope' ></i> joelvarigeti77@gmail.com</p>
                 </div>
 
-                <div class="pages">
+                <div className="pages">
                     <h4>Pages</h4>
                     <li><a href="/home">Home</a></li>
             <li><a href="/about">About</a></li>
@@ -122,22 +88,22 @@ return(
                 </div>
 
                 <div className="icons">
-                    <h4>Follow us</h4>
-<ul class="example-2">
+                    <h4>Follow </h4>
+<ul className="example-2">
  
-  <li class="icon-content">
+  <li className="icon-content">
     <a
       href="https://www.instagram.com/joelvarigeti77?igsh=MXRsZ2dtdWhtaWw1Mw=="
       aria-label="Instagram"
       data-social="instagram"
     >
-      <div class="filled"></div>
+      <div className="filled"></div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
         height="16"
         fill="currentColor"
-        class="bi bi-instagram"
+        className="bi bi-instagram"
         viewBox="0 0 16 16"
         xml:space="preserve"
       >
@@ -147,17 +113,17 @@ return(
         ></path>
       </svg>
     </a>
-    <div class="tooltip">Instagram</div>
+    <div className="tooltip">Instagram</div>
   </li>
-  <li class="icon-content">
+  <li className="icon-content">
     <a href="https://youtube.com/@joelsilence?si=x9EuYdmUIxu3ri8p" aria-label="Youtube" data-social="youtube">
-      <div class="filled"></div>
+      <div className="filled"></div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
         height="16"
         fill="currentColor"
-        class="bi bi-youtube"
+        className="bi bi-youtube"
         viewBox="0 0 16 16"
         xml:space="preserve"
       >
@@ -167,7 +133,7 @@ return(
         ></path>
       </svg>
     </a>
-    <div class="tooltip">Youtube</div>
+    <div className="tooltip">Youtube</div>
   </li>
 </ul>
 
@@ -179,9 +145,10 @@ return(
                 <p>Charity No. 1117019 | Registered in England & Wales No. 5996380.</p>
                 <p>© 2025 Renewal Church. All rights reserved.</p>
         </div>
-        </div>
+    
 </div>
 </div>
+
 
 
 </>

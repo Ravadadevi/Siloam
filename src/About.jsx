@@ -1,6 +1,7 @@
 
 import React from "react";
 import './About.css';
+import Header from './Header';
 import { useState } from 'react';
 
 function About() {
@@ -9,72 +10,67 @@ function About() {
     const toggleMobileMenu = () => {
       setMobileMenuOpen(!isMobileMenuOpen);
     };
+
+    return (
+      <>
+      {/* church logo and menu starts here */}
+      <div className="main">
+      <Header />
   
-return(
+        {/* church logo and menu ends here */}
 
-   <div className="main">
-      <div className="church">
-      <div className="logoandmenu">
-        <div className="logo">
-          <img src="/logo.jpeg" alt="Church Logo" />
-          <h1>
-            SILOAM <em>CHRIST MINISTRIES </em> <br />
-            <span>Come And Grow With Us</span>
-          </h1>
-        </div>
 
-        {/* Hamburger Icon */}
-        <div className="hamburger" onClick={toggleMobileMenu}>
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </div>
-      </div>
-
-      {/* Navigation Menu */}
-      <div className={`head ${isMobileMenuOpen ? 'active' : ''}`}>
-        <ul>
-          <li><a href="/home">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/team">Team</a></li>
-          <li><a href="/location">Location</a></li>
-          <li><a href="/ourtrust"> Programs</a></li>
-          <li><a href="/events">Events</a></li>
-          <button id='btnm1' onClick={() => window.location.href = '/give'}>
-        Give Now
-      </button>
-        </ul>
-      </div>
-
-    </div>
-        
  <div className="about" >
     <div className="about1">
         <div className="church5">
-  <h1>ABOUT US</h1>
-  <p>Here you will find information on some of our team, our beliefs, our work in the community and some important policies.</p>
- 
+  <h1>Inspiring people to follow Jesus <br /> and <br /> Fearlessly change the world.</h1> 
   </div>
   </div>
-  <div className="cot">
-    <br /> <br />
-    <h1>“The first time I walked into the church, <br /> I felt such peace and I knew, <br /> I was home.”</h1>
-</div>
 
+  <div className="belief-section">
+    <div className="belief-left">
+      <div className="belief-icon">
+        <span role="img" aria-label="cross" style={{ fontSize: "48px" }}>✝️</span>
+      </div>
+      <h2 className="belief-title">
+        A CHRIST CENTERED<br />CHURCH
+      </h2>
+      <p className="belief-desc">
+        We believe that Jesus Christ is eternally God, but fully man. He is the eternal Son, conceived by the Spirit, born of a virgin, sinless in this world, dying for our wrongs on the cross, raised in God’s power, coming again for the church, and to judge every person. "Believe on the Lord Jesus Christ and thou shalt be saved." <a href="https://www.biblegateway.com/passage/?search=Acts+16%3A31&version=KJV" target="_blank" rel="noopener noreferrer" style={{ color: "#23b7b7" }}>Acts 16:31 (KJV)</a>
+      </p>
+      <div className="belief-icon" style={{ marginTop: "40px" }}>
+        <span role="img" aria-label="bible" style={{ fontSize: "48px", border: "none" }}>📖 </span>
+      </div>
+      <h2 className="belief-title">
+        A BIBLE BELIEVING<br />CHURCH
+      </h2>
+      <p className="belief-desc">
+        We believe the Bible to be the revealed Word of God, fully and verbally inspired of God. We believe the Scriptures to be the inerrant, infallible Word of God and the final authority for faith and life. We believe that God not only inspired every word, but that He has preserved them through the ages.
+      </p>
+    </div>
+    <div className="belief-right">
+      <img src="/sixteen-miles-out.jpg" alt="Open Bible" className="belief-image" />
+    </div>
+  </div>
 
 <div className="cartss">
     <br />
 <div className="cart">
   <div className="title">
     <div className="title1">
-        <img src="public/A.KARUNANDIHI.jpeg" alt="" />
+        <img src="/A.KARUNANDIHI.jpeg" alt="" />
     <h2>A.KARUNANDIHI</h2>
     <p>Pastor</p>
   </div>
   <div className="title2">
-  <p>I was able to see this world until I was 18 years <br /> old,  then I accidentally swallowed a piece of grass <br />and  lost one of my eye.
-     When I used a transplant <br />to treat  it, I also lost the other eye... Since <br /> then, I have been completely blind.</p>
-     <p>Now I can't see fully... but God has caught me and is<br /> using me  as a witness... I serve God as someone <br /> who proclaims the love of Christ to many.</p>
+  <p>I was able to see this world until I was 18 years <br /> 
+  old,  then I accidentally swallowed a piece of grass <br />
+  and  lost one of my eye.
+     When I used a transplant <br />to treat  it, I also lost the 
+     other eye... Since <br /> then, I have been completely blind. <br /> 
+    Now I can't see fully... but God has caught me and is<br />
+      using me  as a witness... I serve God as someone <br /> 
+      who proclaims the love of Christ to many.</p>
   </div>
   </div>
 </div>
@@ -85,18 +81,22 @@ return(
   <div className="title3">
    
   <div className="title5">
-  <p>Although I was born into a servant's family, I was freed from sin through God's love. ..I have decided to serve God and to preach the gospel of His kingdom in His work alone... I have left every work to proclaim the love of God and His death and resurrection.</p><br /><br /><br /><br /><br />
-  <p className="ramya">I cannot help but proclaim the righteousness and truth that are in God, because I know that there is no one greater than him.</p>
+  <p>Although I was born into a servant's family, 
+    I was freed from sin through God's love. ..I have decided to
+     serve God and to preach the gospel of His kingdom in His work 
+     alone... I have left every work to proclaim the love of God 
+     and His death and resurrection.
+ <br /> I cannot help but proclaim the righteousness and truth that
+  are in God, because I know that there is no one greater than him.
+</p>
   </div>
   <div className="title4">
-        <img src="public/joe.jpeg" alt="public/joe.jpeg" />
+        <img src="/joe.jpeg" alt="/joe.jpeg" />
      <h2>V.JOEL PAUL</h2>
     <p>Pastor</p>
   </div>
   </div>
-</div> <br />
-<br />
-<br />
+</div>
 </div>
 
 <div className="cardss">
@@ -145,12 +145,14 @@ For the sin of this one man, Adam, caused death to rule over many. But even grea
 
         <div className="footer">
             <br /> 
-            <div className="foots">
             <div className="foot">
+              <div>
+              <img src="/jesus.webp" alt="" />
+              </div>
                 <div className="reach">
                 <h4>Reach us</h4>
-                <p><i className='bx bxs-phone'></i>+91 9000832512 <br />   +91 996365687</p>
-                <p><i className='bx bx-envelope' ></i> joelvarigeli77@gmail.com</p>
+                <p><i className='bx bxs-phone'></i>+91 9000832512 <br />   +91 9963065687</p>
+                <p><i className='bx bx-envelope' ></i> joelvarigeti77@gmail.com</p>
                 </div>
 
                 <div className="pages">
@@ -164,7 +166,7 @@ For the sin of this one man, Adam, caused death to rule over many. But even grea
                 </div>
 
                 <div className="icons">
-                    <h4>Follow us</h4>
+                    <h4>Follow </h4>
 <ul className="example-2">
  
   <li className="icon-content">
@@ -221,13 +223,11 @@ For the sin of this one man, Adam, caused death to rule over many. But even grea
                 <p>Charity No. 1117019 | Registered in England & Wales No. 5996380.</p>
                 <p>© 2025 Renewal Church. All rights reserved.</p>
         </div>
-        </div>
-</div>
-
-
+    
 </div>
 </div>
-
+</div>
+</>
 );
 
 }

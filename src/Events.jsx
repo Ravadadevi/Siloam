@@ -1,5 +1,7 @@
 import React from 'react';
 import './events.css'; //
+import Header from './Header';
+
 import { useState } from 'react';
 
 const Events = () => {
@@ -12,45 +14,14 @@ const Events = () => {
         
     
     return (
-        <>
+      <>
       {/* church logo and menu starts here */}
       <div className="main">
-      <div className="church">
-      <div className="logoandmenu">
-        <div className="logo">
-          <img src="/logo.jpeg" alt="Church Logo" />
-          <h1>
-            SILOAM <em>CHRIST MINISTRIES </em> <br />
-            <span>Come And Grow With Us</span>
-          </h1>
-        </div>
-
-        {/* Hamburger Icon */}
-        <div className="hamburger" onClick={toggleMobileMenu}>
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </div>
-      </div>
-
-      {/* Navigation Menu */}
-      <div className={`head ${isMobileMenuOpen ? 'active' : ''}`}>
-        <ul>
-          <li><a href="/home">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/team">Team</a></li>
-          <li><a href="/location">Location</a></li>
-          <li><a href="/ourtrust">Programs</a></li>
-          <li><a href="/events">Events</a></li>
-          <button id='btnm1' onClick={() => window.location.href = '/give'}>
-        Give Now
-      </button>
-        </ul>
-      </div>
-
-    </div>
+      <Header />
   
         {/* church logo and menu ends here */}
+
+  
 
 <div className="events">
     <h1>EVENTS</h1>
@@ -63,7 +34,7 @@ const Events = () => {
             <div className="card1">
                 <div className="card">
                     <div className="image">
-                        <img src="public/image10.jpg" alt=""  />
+                        <img src="/image10.jpg" alt=""  />
                     </div>
                     <div className="content">
                         <a href="#">
@@ -79,7 +50,7 @@ const Events = () => {
                 </div>
                 <div className="card">
                     <div className="image">
-                    <img src="public/image.jpeg" alt=""  />
+                    <img src="/image.jpeg" alt=""  />
 
                     </div>
                     <div className="content">
@@ -96,7 +67,7 @@ const Events = () => {
                 </div>
                 <div className="card">
                     <div className="image">
-                    <img src="public/image1.jpg" alt="" />
+                    <img src="/image1.jpg" alt="" />
 
                     </div>
                     <div className="content">
@@ -113,7 +84,7 @@ const Events = () => {
                 </div>
                 <div className="card">
                     <div className="image">
-                    <img src="public/image2.jpeg" alt="" />
+                    <img src="/image2.jpeg" alt="" />
                     </div>
                     <div className="content">
                         <a href="#">
@@ -129,7 +100,7 @@ const Events = () => {
                 </div>
                 <div className="card">
                     <div className="image">
-                    <img src="public/image3.jpeg" alt="" />
+                    <img src="/image3.jpeg" alt="" />
 
                     </div>
                     <div className="content">
@@ -146,7 +117,7 @@ const Events = () => {
                 </div>
                 <div className="card">
                     <div className="image">
-                    <img src="public/image4.jpeg" alt="" />
+                    <img src="/image4.jpeg" alt="" />
                     </div>
                     <div className="content">
                         <a href="#">
@@ -162,7 +133,7 @@ const Events = () => {
                 </div>
                 <div className="card">
                     <div className="image">
-                        <img src="public/image5.jpeg" alt="" />
+                        <img src="/image5.jpeg" alt="" />
                     </div>
                     <div className="content">
                         <a href="#">
@@ -178,7 +149,7 @@ const Events = () => {
                 </div>
                 <div className="card">
                     <div className="image">
-                    <img src="public/image6.jpeg" alt="" />
+                    <img src="/image6.jpeg" alt="" />
 
                     </div>
                     <div className="content">
@@ -195,7 +166,7 @@ const Events = () => {
                 </div>
                 <div className="card">
                     <div className="image">
-                        <img src="public/image11.avif" alt="" />
+                        <img src="/image11.avif" alt="" />
                     </div>
                     <div className="content">
                         <a href="#">
@@ -211,7 +182,7 @@ const Events = () => {
                 </div>
                 <div className="card">
                     <div className="image">
-                    <img src="public/image7.jpeg" alt="" />
+                    <img src="/image7.jpeg" alt="" />
 
                     </div>
                     <div className="content">
@@ -228,7 +199,7 @@ const Events = () => {
                 </div>
                 <div className="card">
                     <div className="image">
-                    <img src="public/image8.jpeg" alt="" />
+                    <img src="/image8.jpeg" alt="" />
 
                     </div>
                     <div className="content">
@@ -245,7 +216,7 @@ const Events = () => {
                 </div>
                 <div className="card">
                     <div className="image">
-                    <img src="public/image9.jpeg" alt="" />
+                    <img src="/image9.jpeg" alt="" />
 
 
                     </div>
@@ -265,14 +236,16 @@ const Events = () => {
             </div>
         </div>
 
-        <div className="footer">
+           <div className="footer">
             <br /> 
-            <div className="foots">
             <div className="foot">
+              <div>
+              <img src="/jesus.webp" alt="" />
+              </div>
                 <div className="reach">
                 <h4>Reach us</h4>
-                <p><i className='bx bxs-phone'></i>+91 9000832512 <br />   +91 996365687</p>
-                <p><i className='bx bx-envelope' ></i> joelvarigeli77@gmail.com</p>
+                <p><i className='bx bxs-phone'></i>+91 9000832512 <br />   +91 9963065687</p>
+                <p><i className='bx bx-envelope' ></i> joelvarigeti77@gmail.com</p>
                 </div>
 
                 <div className="pages">
@@ -286,7 +259,7 @@ const Events = () => {
                 </div>
 
                 <div className="icons">
-                    <h4>Follow us</h4>
+                    <h4>Follow </h4>
 <ul className="example-2">
  
   <li className="icon-content">
@@ -343,11 +316,10 @@ const Events = () => {
                 <p>Charity No. 1117019 | Registered in England & Wales No. 5996380.</p>
                 <p>© 2025 Renewal Church. All rights reserved.</p>
         </div>
-        </div>
+    
+</div>
 </div>
 
-
-</div>
        
         </>
     );

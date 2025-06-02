@@ -3,46 +3,136 @@
     padding: 0;
     box-sizing: border-box;
 }  
-.locks{
-    background-image: url("public/team1.jpg");
-    height: 50vh;
-    width: 80vw;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: 10%;
-    margin-top: 3%;
-    filter:contrast(0.8);
-    border-radius: 10px;
-} 
-.team{
-    background-color: rgb(218, 214, 214);
-    height: 65vh;
+/* Apply a dark overlay using pseudo-element instead of brightness filter */
+.locks {
+  background-image: url("/team+banner.jpg");
+  height: 60vh;
+  width: 98.5vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
-.team h1{
-    text-align: center;
-    padding-top: 20px;
-    position: absolute;
-    left: 40%;
-    font-weight: 700;
-    font-size: 35px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    margin-top: 4%;
+
+@media screen and (max-width: 768px) {
+  .logoandmenu {
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .head {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--background-color);
+  }
+.logoandmenu {
+  margin: 0;
+  gap: 5%;
+    flex-direction: row;
+  }
+.logo{
+  margin-left: -15%;
 }
-.locks h1{
-    color: white;
-    font-size: 80px;
-    text-align: center;
-    padding-top: 20px;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    font-weight: 800;
-    transform: translate(-50%, -50%);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  .hamburger {
+    margin-right: -5%;
+    display: flex;
+  }
+
+  .head ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .head li {
+    width: 100%;
+    padding: 10px 20px;
+    text-align: left;
+  }
+
+  .head a {
+    display: block;
+    width: 100%;
+  }
+  
+}
+
+
+@media screen and (max-width: 480px) {
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+
+  em {
+    font-size: 1rem;
+  }
+  .head{
+    margin-top: 15%;
+  }
+.head ul{
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  .head li {
+    padding: 0;
+  }
+  .logoandmenu {
+    flex-direction: row;
+  }
+.logo{
+  margin-left: 0%;
+}
+  .hamburger {
+    margin-right: 0%;
+    display: flex;
+  }
+}
+
+/* Dark overlay for better text contrast */
+.locks::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black */
+  z-index: 1;
+}
+
+.team {
+  height: 65vh;
+  position: relative;
+}
+
+/* Style the heading */
+.team h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  font-size: 4rem;
+  font-family: var(--font-family);
+  width: 100%;
+  z-index: 2;
+
+  /* Highlight effect */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 .ours{
-  background-color: #84bd8c;;
   height: 75vh;
   margin-top: 4%;
 }
@@ -54,15 +144,15 @@
 .ours h1{
     font-size: 50px;
     font-weight: 800;
-    color: rgb(139, 36, 36);
+    color:rgb(151, 38, 104);
     text-align: center;
     align-items: center;
     margin-top: 3%;
 }
+
 .our1 p{
     font-size: 22px;
-    font-weight: 500;
-    color: rgb(122, 13, 99);
+    color:black;
     margin-top: 5%;
 }
 .our2 img{
@@ -74,20 +164,19 @@
 }
 .texts{
     height: 40vh;
-    background-color: #84bd8c;;
+    background-color: rgba(245, 222, 179, 0.664);;
     margin-top: 4%;
   }
 
   .texts h1{
     font-size: 50px;
     font-weight: 800;
-    color: white;
+    color: rgb(34, 31, 31);
     text-align: center;
     align-items: center;
     margin-top: 3%;
   }
   .photos{
-    background-color: rgb(218, 214, 214);
     margin-top: 4%;
     height: 65vh;
   }
@@ -222,163 +311,10 @@
 }
 
 
-ul {
-  list-style: none;
-}
 
-.example-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.example-2 .icon-content {
-  margin: 0 10px;
-  position: relative;
-}
-.example-2 .icon-content .tooltip {
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #fff;
-  padding: 6px 10px;
-  border-radius: 5px;
-  opacity: 0;
-  visibility: hidden;
-  font-size: 14px;
-  transition: all 0.3s ease;
-}
-.example-2 .icon-content:hover .tooltip {
-  opacity: 1;
-  visibility: visible;
-  top: -50px;
-}
-.example-2 .icon-content a {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  color: #4d4d4d;
-  background-color: #fff;
-  transition: all 0.3s ease-in-out;
-}
-.example-2 .icon-content a:hover {
-  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
-}
-.example-2 .icon-content a svg {
-  position: relative;
-  z-index: 1;
-  width: 30px;
-  height: 30px;
-}
-.example-2 .icon-content a:hover {
-  color: white;
-}
-.example-2 .icon-content a .filled {
-  position: absolute;
-  top: auto;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  background-color: #000;
-  transition: all 0.3s ease-in-out;
-}
-.example-2 .icon-content a:hover .filled {
-  height: 100%;
-}
-
-
-.example-2 .icon-content a[data-social="instagram"] .filled,
-.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
-  background: linear-gradient(
-    45deg,
-    #405de6,
-    #5b51db,
-    #b33ab4,
-    #c135b4,
-    #e1306c,
-    #fd1f1f
-  );
-}
-.example-2 .icon-content a[data-social="youtube"] .filled,
-.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
-  background-color: #5900ff;
-}
-.footer{
-  height: 40vh;
-  background-color: rgb(204, 175, 231);
-}
-.foots{
-  background-color: whitesmoke;
-  width: 92vw;
-  height: 30vh;
-  margin-left: 3%;
-
-}
-.foot{
-  margin-top: 1%;
-  display: flex;
-  justify-content: space-evenly;
-}
-h4{
-  font-size: 25px;
-  font-weight: 700;
-}
-.reach{
-  margin-top: 2%; 
-  font-size: 20px;
-}
-.reach p {
-  margin-top: 4%;
-  display: flex;
-  align-items: center;
-  gap: 10px; /* Adjust spacing between icon and text */
-}
-
-.reach p i {
-  font-size: 20px; /* Adjust icon size */
-  color: #000; /* Adjust icon color */
-}
-
-.reach p span {
-  font-size: 18px; /* Adjust text size */
-  color: #000; /* Adjust text color */
-}
-.pages{
-  margin-top: 2%; 
-}
-.pages a{
-  margin-top: 4%; 
-  color: #000;
-  font-size: 20px;
-  font-weight:100;
-
-
-}  
-li{
-  list-style: none;
-}
-.icons h4{
-  margin-top: 20%; 
-  margin-left: 18%;
-}
-hr{
-  background-color: whitesmoke;
-  margin-top: 2%;
-}
-.copy{
-display: flex;
-justify-content: space-between;
-margin-top: 1%;
-}
 @media (max-width: 768px) {
   .locks {
-    height: 20vh;
+    height: 50vh;
     width: 90vw;
     margin-left: 5%;
     margin-top: 2%;
@@ -391,8 +327,8 @@ margin-top: 1%;
   .team h1 {
     font-size: 45px;
     font-weight: 900;
-    margin-top: 15%;
-    margin-left: -5%;
+    margin-left: 3%;
+    margin-top: 3%;
     transform: translate(-50%, -50%);
     text-align: center;
   }
@@ -418,6 +354,7 @@ margin-top: 1%;
 
   .our2 img {
     width: 90%;
+    margin-top: 5%;
     height: auto;
     margin-left: 5%;
   }
@@ -450,20 +387,11 @@ margin-top: 1%;
     margin-left: 0;
   }
 
-  .example-2 .icon-content a {
-    width: 40px;
-    height: 40px;
-  }
-
-  .example-2 .icon-content a svg {
-    width: 20px;
-    height: 20px;
-  }
 
 }
 @media (max-width: 425px) {
   .locks {
-    height: 30vh;
+    height: 40vh;
     width: 90vw;
     margin-left: 5%;
     margin-top: 2%;
@@ -472,8 +400,8 @@ margin-top: 1%;
   .team h1 {
     font-size: 35px;
     font-weight: 700;
-    margin-top: 10%;
-    left:120px;
+    margin-top: 2%;
+    left: 0;
     transform: none;
   }
 
@@ -492,6 +420,7 @@ margin-top: 1%;
     align-items: center;
   }
   .our1{
+    padding: 1%;
     order: 1;
   }
 
@@ -504,7 +433,7 @@ margin-top: 1%;
 
   .our2 img {
     width: 90%;
-    height: 40vh;
+    height: 50vh;
     margin-left: 5%;
     order: -1;
     margin-top: 3%;
@@ -532,53 +461,5 @@ margin-top: 1%;
     font-size: 25px;
     text-align: center;
     margin-top: -3%;
-  }
-
-  .footer {
-    height: auto;
-    padding-bottom: 20px;
-  }
-
-  .foots {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .foot {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .reach p {
-    font-size: 16px;
-    text-align: center;
-  }
-
-  .pages a {
-    font-size: 16px;
-    text-align: center;
-  }
-
-  .icons h4 {
-    margin-top: 10%;
-    text-align: center;
-  }
-
-  .example-2 .icon-content a {
-    width: 40px;
-    height: 40px;
-  }
-
-  .example-2 .icon-content a svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  .copy {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
   }
 }

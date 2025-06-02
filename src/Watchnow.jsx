@@ -1,6 +1,8 @@
  import React from "react";
 import './watch.css';
 import { useState } from 'react';
+import Header from './Header';
+
 
 
   function Watchnow() {
@@ -16,42 +18,10 @@ import { useState } from 'react';
         <>
       {/* church logo and menu starts here */}
       <div className="main">
-      <div className="church">
-      <div className="logoandmenu">
-        <div className="logo">
-          <img src="/logo.jpeg" alt="Church Logo" />
-          <h1>
-            SILOAM <em>CHRIST MINISTRIES </em> <br />
-            <span>Come And Grow With Us</span>
-          </h1>
-        </div>
-
-        {/* Hamburger Icon */}
-        <div className="hamburger" onClick={toggleMobileMenu}>
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </div>
-      </div>
-
-      {/* Navigation Menu */}
-      <div className={`head ${isMobileMenuOpen ? 'active' : ''}`}>
-        <ul>
-          <li><a href="/home">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/team">Team</a></li>
-          <li><a href="/location">Location</a></li>
-          <li><a href="/ourtrust">Programs</a></li>
-          <li><a href="/events">Events</a></li>
-          <button id='btnm1' onClick={() => window.location.href = '/give'}>
-        Give Now
-      </button>
-        </ul>
-      </div>
-
-    </div>
+      <Header />
   
         {/* church logo and menu ends here */}
+
 
         <div className="watchnow">
             <div className="now">
@@ -68,16 +38,18 @@ import { useState } from 'react';
             </div>
             </div>
 
+<br /> <br /> <br />
 
-
-            <div className="footer">
+        <div className="footer">
             <br /> 
-            <div className="foots">
             <div className="foot">
+              <div>
+              <img src="/jesus.webp" alt="" />
+              </div>
                 <div className="reach">
                 <h4>Reach us</h4>
-                <p><i className='bx bxs-phone'></i>+91 9000832512 <br />   +91 996365687</p>
-                <p><i className='bx bx-envelope' ></i> joelvarigeli77@gmail.com</p>
+                <p><i className='bx bxs-phone'></i>+91 9000832512 <br />   +91 9963065687</p>
+                <p><i className='bx bx-envelope' ></i> joelvarigeti77@gmail.com</p>
                 </div>
 
                 <div className="pages">
@@ -91,7 +63,7 @@ import { useState } from 'react';
                 </div>
 
                 <div className="icons">
-                    <h4>Follow us</h4>
+                    <h4>Follow </h4>
 <ul className="example-2">
  
   <li className="icon-content">
@@ -148,7 +120,7 @@ import { useState } from 'react';
                 <p>Charity No. 1117019 | Registered in England & Wales No. 5996380.</p>
                 <p>© 2025 Renewal Church. All rights reserved.</p>
         </div>
-        </div>
+    
 </div>
 </div>
 

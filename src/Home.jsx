@@ -1,56 +1,92 @@
 import React from 'react';
 import './Home.css';
+import Header from './Header';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 
 function Church() {
 
+   const [formData, setFormData] = useState({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phoneNumber: "",
+      message: ""
+    });
+
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [result, setResult] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
   
+  const handleChange = (e) => {
+  const { name, value } = e.target;
+  setFormData((prev) => ({ ...prev, [name]: value }));
+};
+
+  const relatedItems = [
+  {
+    image: '/youth_.webp',
+    title: 'God Knows and Loves You',
+    description:
+      'Each of us is a beloved child of God. You can draw closer to your Heavenly Father through prayer and learn to recognize His loving guidance in your life.',
+  },
+  {
+    image: '/hong_kong.webp',
+    title: 'Jesus Taught Us to Love One Another',
+    description:
+      'Jesus provides the ultimate example of love. To follow Him is to love God and serve those around you.',
+  },
+  {
+    image: '/woman.webp',
+    title: "The Book of Mormon and the Bible Are God's Word",
+    description:
+      'The Book of Mormon and the Bible teach us about God’s plan and testify of Jesus Christ.',
+  },
+   {
+    image: '/christ_art_hofmann.webp',
+    title: "Jesus Christ Is Your Savior",
+    description:
+      'Jesus Christ is the Son of God—your Savior and Redeemer, sent to save us all. Because of Him, you can find joy in knowing you can live with God and your loved ones for eternity..',
+  },
+];
+  
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending...");
+
+    const dataToSend = new FormData();
+    for (const key in formData) {
+      dataToSend.append(key, formData[key]);
+    }
+    dataToSend.append("access_key", "9a85e460-87f2-4647-903f-21a3a1ad4bd5");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: dataToSend
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      setIsSubmitted(true);
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
 
   return (
     <>
       {/* church logo and menu starts here */}
       <div className="main">
-      <div className="church">
-      <div className="logoandmenu">
-        <div className="logo">
-          <img src="/logo.jpeg" alt="Church Logo" />
-          <h1>
-            SILOAM <em>CHRIST MINISTRIES </em> <br />
-            <span>Come And Grow With Us</span>
-          </h1>
-        </div>
 
-        {/* Hamburger Icon */}
-        <div className="hamburger" onClick={toggleMobileMenu}>
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </div>
-      </div>
-
-      {/* Navigation Menu */}
-      <div className={`head ${isMobileMenuOpen ? 'active' : ''}`}>
-        <ul>
-          <li><a href="/home">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/team">Team</a></li>
-          <li><a href="/location">Location</a></li>
-          <li><a href="/ourtrust"> Programs</a></li>
-          <li><a href="/events">Events</a></li>
-          <button id='btnm1' onClick={() => window.location.href = '/give'}>
-        Give Now
-      </button>
-        </ul>
-      </div>
-
-    </div>
+      <Header />
   
         {/* church logo and menu ends here */}
 
@@ -72,6 +108,21 @@ function Church() {
             </h1>
           </div>
         </div>
+  <br /><br />  <br /><br />
+  <div className='welcome' style={{ textAlign: 'center', margin: '180px 0 40px 0' }}>
+    <h1 style={{ fontWeight: 400, fontSize: '2.8rem', marginBottom: 24 }}>
+      Welcome to Siloam Chirst Ministries 
+    </h1>
+    <p style={{ fontSize: '1.15rem', color: '#333', marginBottom: 18 }}>
+      SILOAM exists to lead people to real transformation as they love God and change their world.
+    </p>
+    <p style={{ fontSize: '1.1rem', color: '#444', marginBottom: 18 }}>
+      We accomplish this as people:
+    </p>
+    <div style={{ fontWeight: 700, fontSize: '1.1rem', letterSpacing: 1 }}>
+      KNOW GOD // FIND FREEDOM // DISCOVER PURPOSE // MAKE A DIFFERENCE
+    </div>
+  </div>
 
         <div className="homecontent2">
           <div className="head1">
@@ -86,7 +137,7 @@ function Church() {
             </p>
           </div>
           <div className="head2">
-            <img src="/jhon.jpeg" alt="Pastor John" />
+            <img src="/siloam.jpg" alt="Pastor John" />
           </div>
         </div>
 
@@ -102,11 +153,11 @@ function Church() {
            <Link to="/watchnow" className="btnm">
       Watch Now<span className="btnm-border"></span>
     </Link>
-    <div class="tooltip-container">
-  <div class="button-content">
-    <span class="text5">Share</span>
+    <div className="tooltip-container">
+  <div className="button-content">
+    <span className="text5">Share</span>
     <svg
-      class="share-icon"
+      className="share-icon"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       width="24"
@@ -117,9 +168,9 @@ function Church() {
       ></path>
     </svg>
   </div>
-  <div class="tooltip-content">
-    <div class="social-icons">
-      <a href="https://twitter.com" class="social-icon twitter">
+  <div className="tooltip-content">
+    <div className="social-icons">
+      <a href="https://twitter.com" className="social-icon twitter">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -187,96 +238,78 @@ function Church() {
         <div className="marque">
           <h1>Library</h1>
           <div className="im">
-            <img src="public/i1.jpeg" alt="i1" />
-            <img src="public/i2.jpeg" alt="i2" />
-            <img src="public/i3.jpeg" alt="i3" />
-            <img src="public/i4.jpeg" alt="i4" />
-            <video id="video-container" src="public/video1.mp4" autoPlay loop muted playsInline />
-            <img src="public/i5.jpeg" alt="i5" />
-            <img src="public/i6.jpeg" alt="i6" />
-            <img src="public/i7.jpeg" alt="i7" />
-            <img src="public/i1.jpeg" alt="i1 again" />
+            <img src="/i1.jpeg" alt="i1" />
+            <img src="/i2.jpeg" alt="i2" />
+            <img src="/i3.jpeg" alt="i3" />
+            <img src="/i4.jpeg" alt="i4" />
+            <video id="video-container" src="/video1.mp4" autoPlay loop muted playsInline />
+            <img src="/i5.jpeg" alt="i5" />
+            <img src="/i6.jpeg" alt="i6" />
+            <img src="/i7.jpeg" alt="i7" />
+            <img src="/i1.jpeg" alt="i1 again" />
           </div>
         </div>
 
     
 
-        <div className="cards">
-          <h1>Events: Coming soon…</h1>
-          <div className="card1">
-            <div className="card">
-              <div className="image">
-                <img src="public/image10.jpg" alt="Good Friday" style={{ height: '200px' }} />
-              </div>
-              <div className="content">
-                <a href="#">
-                  <span className="title">Good Friday</span>
-                </a>
-                <p className="desc">6:00 pm 18/04/2025</p>  <br />
-               
-              </div>
-            </div>
-
-            <div className="card">
-              <div className="image">
-                <img src="public/image1.jpg" alt="Easter 1" />
-              </div>
-              <div className="content">
-                <a href="#">
-                  <span className="title">Easter Sunday</span>
-                </a>
-                <p className="desc">9:30 am 20/04/2025</p> <br />
-               
-              </div>
-            </div>
-
-            <div className="card">
-              <div className="image">
-                <img src="public/image.jpeg" alt="Easter 2" />
-              </div>
-              <div className="content">
-                <a href="#">
-                  <span className="title">Easter Sunday</span>
-                </a>
-                <p className="desc">11:30 am 20/04/2025</p> <br />
-                
-              </div>
+ <div className="related-content-container">
+      <h2 className="related-content-title">Related Content</h2>
+      <div className="related-cards">
+        {relatedItems.map((item, index) => (
+          <div className="related-card" key={index}>
+            <img src={item.image} alt={item.title} className="related-image" />
+            <div className="related-text">
+              <h3 className="related-card-title">{item.title}</h3>
+              <p className="related-card-description">{item.description}</p>
             </div>
           </div>
-        </div>
-        {/* home page ends here */}
+        ))}
+      </div>
+    </div>      
+      {/* home page ends here */}
 
 
-        <div className="contact-form">
-          <h1>Talk With Us</h1>
-          <form>
-            <div className="form-group">
-              <label htmlFor="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your Name" required />
-            </div>
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="Your Email" required />
-            </div>
-            <div className="form-group">
-              <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-            </div>
-            <button type="submit" className="submit-btn">Send Message</button>
-          </form>
-        </div>
+ <div className="contact-container">
+      <div className="contact-info">
+        <h2>Contact Us</h2>
+        <p>
+          Not sure what you need? The team at Square Events will be happy to listen to you and support event ideas you hadn’t considered.
+        </p>
+        <p>📧 joelvarigeti77@gmail.com</p>
+        <p>📞 Support: +91 9000832512 <br />   +91 9963065687</p>
+      </div><br />
 
+      <div className="contact-form">
+        <h3>We’d love to hear from you!<br />Let’s get in touch</h3>
+        <form onSubmit={onSubmit}>
+          <div className="form-group">
+            <input type="text" name='firstName'  onChange={handleChange} placeholder="First Name" required/>
+            <input type="text" name='lastName' onChange={handleChange} placeholder="Last Name" required/>
+          </div>
+          <div className="form-group">
+            <input type="email" name='email' onChange={handleChange} placeholder="Email"  required />
+            <input type="text" name='phoneNumber' onChange={handleChange} placeholder="Phone number" required/>
+          </div>
+          <textarea name='message' placeholder="Your Message" onChange={handleChange} className="full-width" rows="4" required/>
+          <button type="submit">Send Message</button>
+        </form> <br />
+                  <p>{result}</p>
+
+      </div>
+    </div>
 
 
 
         <div className="footer">
             <br /> 
-            <div className="foots">
             <div className="foot">
+              <div>
+              <img src="/jesus.webp" alt="" />
+              </div>
                 <div className="reach">
                 <h4>Reach us</h4>
-                <p><i className='bx bxs-phone'></i>+91 9000832512 <br />   +91 996365687</p>
-                <p><i className='bx bx-envelope' ></i> joelvarigeli77@gmail.com</p>
+                <p><i className='bx bxs-phone'></i>+91 9000832512 <br />   +91 9963065687</p>
+                <p><i className='bx bx-envelope' ></i> joelvarigeti77@gmail.com</p>
                 </div>
 
                 <div className="pages">
@@ -347,7 +380,7 @@ function Church() {
                 <p>Charity No. 1117019 | Registered in England & Wales No. 5996380.</p>
                 <p>© 2025 Renewal Church. All rights reserved.</p>
         </div>
-        </div>
+    
 </div>
 </div>
 

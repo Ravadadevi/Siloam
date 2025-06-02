@@ -1,6 +1,7 @@
 import React from 'react';
 import './Give.css'; 
 
+
 import { useState } from 'react';
 
 function Give() {
@@ -14,97 +15,65 @@ function Give() {
   return (
     <>
     <div className="give">
+      <div className="qr-section">
+        <h3>Scan QR & directly give <br />
+          to the Siloam chief Ministries.</h3>
+      </div>
+
       <div className="donation-form">
         <h2>GIVE NOW</h2>
+        <img src="/phone pay scan.jpeg" alt="QR Code" className="qr-code" />
 
-        <div className="dropdown">
-          <select defaultValue="">
-            <option value="" disabled>Select Fund</option>
-            <option value="general">General Fund</option>
-            <option value="missions">Missions</option>
-            <option value="building">Building Fund</option>
-          </select>
+        {/* Payment method icons */}
+        <div className="payment-icons">
+          <img src="/phonepe.png" alt="PhonePe" title="PhonePe" />
+          <img src="/icons8-google-pay-48.png" alt="Google Pay" title="Google Pay"/>
         </div>
+        {/* End payment method icons */}
 
-        <h3>Choose Amount</h3>
-        <div className="amount-options">
-          {[50, 500, 1000, 5000, 10000, 25000].map((val) => (
-            <button key={val} onClick={() => handleAmountClick(val)}>
-              ₹{val}
-            </button>
-          ))}
-        </div>
-
-        <h3>Enter Other Amount</h3>
-        <input
-          type="number"
-          placeholder="Between ₹1 and ₹500000"
-          value={amount}
-          onChange={(e) => setAmount(e.target.value)}
-        />
-
-        <br />
-        <button
-          className="proceed-button"
-          onClick={() => {
-            if (amount === "") {
-              alert("Amount is required");
-            } else {
-              window.location.href = '/paymentform';
-            }
-          }}
-        >
-          Proceed to Give
-        </button>
       </div>
+
       <div className="hooms">
-      <div className="arrow-wrapper">
-        <div className="arrow"></div>
+        <div className="arrow-wrapper">
+          <div className="arrow"></div>
+        </div>
+        <li className='hoom'><a href="/home">Home </a></li>
       </div>
-
-      <li className='hoom'><a href="/home">Home </a></li>
-</div>
-    </div>
-
-    <div className="qr-section">
-      <h3>Scan QR & directly give <br />
-         to the Siloam chief Ministries.</h3>
-      <img src="public/scan_me_qr_code.jpg" alt="QR Code" className="qr-code" />
     </div>
 
     <div className="sec">
-    <div className="bank-details">
-      <h3>Our Bank Account Details</h3>
-      <div className="bank-info">
-        <img src="/logo.jpeg" alt="Church Logo" className="bank-logo" />
-        <div className="bank-details-row">
-          <span>SILOAM CHIEF MINISTRIES     <span id='straight'>   | </span></span>
+      <div className="bank-details">
+        <h3>Our Bank Account Details</h3>
+        <div className="bank-info">
+          <img src="/logo.jpeg" alt="Church Logo" className="bank-logo" />
+          <div className="bank-details-row">
+            <span>SILOAM CHIEF MINISTRIES     <span id='straight'>   | </span></span>
+          </div>
+          <div className="bank-details-row">
+            <span>245210100055414        
+              <span id='straight'>   | </span>
+            </span>
+          </div>
+          <div className="bank-details-row">
+            <span>UBIN0824526                 <span id='straight'>   | </span></span>
+          </div>
+          <div className="bank-details-row">
+            <span style={{ Top:"100px"}}>Arilova</span>
+          </div>
         </div>
-        <div className="bank-details-row">
-          <span>59100411230411         
-                        <span id='straight'>   | </span>
-          </span>
-        </div>
-        <div className="bank-details-row">
-          <span>HDFC0003777                 <span id='straight'>   | </span></span>
-        </div>
-        <div className="bank-details-row">
-          <span style={{ Top:"100px"}}>Hydernagar</span>
-        </div>
-      </div>
       </div>
     </div>
-        <br /> <br />
+    <br /> <br />
 
-
-
-        <div className="footer">
+     <div className="footer">
             <br /> 
-            <div className="foots">
             <div className="foot">
+              <div>
+              <img src="/jesus.webp" alt="" />
+              </div>
                 <div className="reach">
                 <h4>Reach us</h4>
-                <p><i className='bx bxs-phone'></i>+91 9000832512 <br />   +91 996365687</p>
+                <p><i className='bx bxs-phone'></i>+91 9000832512 <br />   +91 9963065687</p>
                 <p><i className='bx bx-envelope' ></i> joelvarigeli77@gmail.com</p>
                 </div>
 
@@ -114,11 +83,12 @@ function Give() {
             <li><a href="/about">About</a></li>
             <li><a href="/team">Team</a></li>
             <li><a href="/location">Location</a></li>
+            <li><a href="/ourtrust"> Programs</a></li>
             <li><a href="/events">Events</a></li>
                 </div>
 
                 <div className="icons">
-                    <h4>Follow us</h4>
+                    <h4>Follow </h4>
 <ul className="example-2">
  
   <li className="icon-content">
@@ -175,10 +145,8 @@ function Give() {
                 <p>Charity No. 1117019 | Registered in England & Wales No. 5996380.</p>
                 <p>© 2025 Renewal Church. All rights reserved.</p>
         </div>
-        </div>
+    
 </div>
-
-
     </>
   );
 }

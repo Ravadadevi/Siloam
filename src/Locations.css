@@ -4,19 +4,17 @@
     box-sizing: border-box;
 }  
 .lock{
-    background-image: url("public/family-visiting-grave-loved-one.jpg");
-    height: 50vh;
-    width: 80vw;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: 10%;
-    margin-top: 3%;
-    filter:contrast(0.8);
-    border-radius: 10px;
+    background-image: url("/family-visiting-grave-loved-one.jpg");
+  height: 60vh;
+  width: 98.5vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 } 
 .locked{
-    background-color: rgb(218, 214, 214);
     height: 65vh;
 }
 .locked h1{
@@ -30,16 +28,20 @@
     margin-top: 4%;
 }
 .lock h1{
-    color: white;
-    font-size: 80px;
-    text-align: center;
-    padding-top: 20px;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    font-weight: 800;
-    transform: translate(-50%, -50%);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  font-size: 4rem;
+  font-family: var(--font-family);
+  width: 100%;
+  z-index: 2;
+
+  /* Highlight effect */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 .map{
   margin-top: 4%;
@@ -47,29 +49,29 @@
   font-size: 30px;
   font-weight: 800;
   color: white;
+  
 
 }
 .tie{
-  background-color: #c98365;
 
 }
 .tie h2{
     font-size: 50px;
     font-weight: 800;
-    color: white;
+    color: black;
     text-align: center;
     margin-top: 3%;
     padding-top: 3%;
 
 }
 iframe{
-  box-shadow: 0px 0px 10px 0px #000000;   
+    box-shadow: 0px 0px 10px 0px #000000;   
 
 }
 .tie h5{
     font-size: 30px;
     font-weight: 800;
-    color: white;
+    color: black;
     text-align: center;
     padding-top: 1%;
 }
@@ -77,7 +79,6 @@ iframe{
 .type{
     display: flex;
     justify-content: space-evenly;
-    background-color: #c98365;
     height: 65vh;
 }
 .cars1 img{
@@ -89,305 +90,173 @@ iframe{
 
 } 
 
-.text{
-    height: 40vh;
-    background-color: rgba(41, 132, 165, 0.815);
-    margin-top: 4%;
-  }
-  .text h1{
-    font-size: 50px;
-    font-weight: 800;
-    color: white;
-    text-align: center;
-    align-items: center;
-    margin-top: 3%;
-  }
-  ul {
-    list-style: none;
-  }
-  
-  .example-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .example-2 .icon-content {
-    margin: 0 10px;
-    position: relative;
-  }
-  .example-2 .icon-content .tooltip {
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    padding: 6px 10px;
-    border-radius: 5px;
-    opacity: 0;
-    visibility: hidden;
-    font-size: 14px;
-    transition: all 0.3s ease;
-  }
-  .example-2 .icon-content:hover .tooltip {
-    opacity: 1;
-    visibility: visible;
-    top: -50px;
-  }
-  .example-2 .icon-content a {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: #4d4d4d;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-  }
-  .example-2 .icon-content a:hover {
-    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
-  }
-  .example-2 .icon-content a svg {
-    position: relative;
-    z-index: 1;
-    width: 30px;
-    height: 30px;
-  }
-  .example-2 .icon-content a:hover {
-    color: white;
-  }
-  .example-2 .icon-content a .filled {
-    position: absolute;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background-color: #000;
-    transition: all 0.3s ease-in-out;
-  }
-  .example-2 .icon-content a:hover .filled {
-    height: 100%;
-  }
-  
-  
-  .example-2 .icon-content a[data-social="instagram"] .filled,
-  .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
-    background: linear-gradient(
-      45deg,
-      #405de6,
-      #5b51db,
-      #b33ab4,
-      #c135b4,
-      #e1306c,
-      #fd1f1f
-    );
-  }
-  .example-2 .icon-content a[data-social="youtube"] .filled,
-  .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
-    background-color: #5900ff;
-  }
-  .footer{
-    height: 40vh;
-    background-color: rgb(204, 175, 231);
-  }
-  .foots{
-    background-color: rgb(150, 147, 147);
-    width: 92vw;
-    height: 30vh;
-    margin-left: 3%;
-
-  }
-  .foot{
-    margin-top: 2%;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  h4{
-    font-size: 25px;
-    font-weight: 700;
-  }
-  .reach{
-    margin-top: 2%; 
-    font-size: 20px;
-  }
-  .reach p {
-    margin-top: 4%;
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Adjust spacing between icon and text */
-  }
-
-  .reach p i {
-    font-size: 20px; /* Adjust icon size */
-    color: #000; /* Adjust icon color */
-  }
-
-  .reach p span {
-    font-size: 18px; /* Adjust text size */
-    color: #000; /* Adjust text color */
-  }
-.pages{
-    margin-top: 2%; 
+.midweek-invite-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #e6f7fa 0%, #f7f7f7 100%);
+  border-radius: 18px;
+  margin: 3% 5% 0 5%;
+  padding: 40px 0 40px 40px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  min-height: 350px;
+  gap: 40px;
 }
-.pages a{
-    margin-top: 4%; 
-    color: #000;
-    font-size: 20px;
-    font-weight:100;
 
+.midweek-invite-content {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
 
-}  
-li{
-    list-style: none;
+.invite-subtitle {
+  color: #19c6c6;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
 }
-.icons h4{
-    margin-top: 20%; 
-    margin-left: 18%;
+
+.invite-title {
+  color: #333;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  font-family: 'Merriweather', serif;
 }
-hr{
-    background-color: whitesmoke;
-    margin-top: 2%;
+
+.invite-underline {
+  width: 70px;
+  height: 5px;
+  background: #19c6c6;
+  border-radius: 3px;
+  margin: 18px 0 28px 0;
 }
-.copy{
-display: flex;
-justify-content: space-between;
-margin-top: 1%;
+
+.invite-description {
+  color: #666;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
 }
+
+.midweek-invite-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+}
+
+.midweek-invite-image img {
+  width: 100%;
+  max-width: 430px;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+  object-fit: cover;
+  aspect-ratio: 1.5/1;
+}
+
 
 @media (max-width: 768px) {
-  .lock {
-    height: 20vh;
-    width: 90vw;
-    margin-left: 5%;
-    margin-top: 2%;
-  }
-  .locked {
-    height: 25vh;
-  }
-  .locked h1 {
-    font-size: 55px;
-    margin-top: 20%;
-    font-weight: 900;
-    margin-left: 6%;
-  }
-  .map {
-    font-size: 20px;
-    margin-top: 2%;
-  }
-  .cars1 {
-    font-size: 20px;
-    margin-top: 2%;
-  }
-  .type {
-    flex-direction: column;
-    height: auto;
-    margin-top: 4%;
-  }
-  .text {
-    height: 20vh;
-    margin-top: 4%;
-  }
-  .text h1 {
-    font-size: 30px;
-    margin-top: 2%;
-  }
-  .example-2 .icon-content a {
-    width: 40px;
-    height: 40px;
-  }
-  .example-2 .icon-content a svg {
-    width: 20px;
-    height: 20px;
-  }
-}
-@media (max-width: 425px) {
-  .lock {
-    height: 30vh;
+  .lock{
+margin-left: 0;
+margin: 2%;
+    height: 40vh;
     width: 95vw;
-    margin-left: 2.5%;
-    margin-top: 1%;
   }
-  .locked {
-    height: 35vh;
-  }
-  .locked h1 {
-    font-size: 40px;
-    margin-top: 15%;
-    font-weight: 800;
-    margin-left: 5%;
-  }
-  .tie{
-    height: 90vh;
-  }
-  .tie h2{
-    font-size: 30px;
-  }
-  .tie h5{
-    font-size: 25px;
-  }
-
-  .map {
-    font-size: 18px;
-    margin-top: 1%;
-  }
-  .cars1 img {
-    width: 350px;
-    height: 250px;
-    margin-top: 5%;
-    margin-left: 10%;
+  .lock h1{
+    font-size: 50px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .type {
-    flex-direction: column;
-    height: auto;
-    margin-top: 3%;
-  }
-  .text {
-    height: 30vh;
-    margin-top: 3%;
-  }
-  .text h1 {
-    font-size: 25px;
-    margin-top: 1%;
-  }
-  .example-2 .icon-content a {
-    width: 35px;
-    height: 35px;
-  }
-  .example-2 .icon-content a svg {
-    width: 18px;
-    height: 18px;
-  }
-  .footer {
-    height: auto;
-  }
-  .foots {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-  }
-  .foot {
     flex-direction: column;
     align-items: center;
+    height: auto;
   }
-  .reach, .pages, .icons {
-    margin-top: 2%;
-    text-align: center;
-  }
-  .reach p {
-    font-size: 16px;
-  }
-  .pages a {
-    font-size: 18px;
-  }
-  .icons h4 {
-    margin-top: 10%;
-  }
-  .copy {
+  .midweek-invite-section {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    padding: 20px;
+    width: 90vw;
+  }
+ .cars1 img{
+    width: 50vw;
+    height: 50vh;
+    margin-top: 5%;
+  }
+  .tie {
+    width: 90vw;
+    margin-left: 5%;
+  }
+
+ iframe {
+  width: 80vh;
+  border: none;
+  margin-bottom: 5%;
+    box-shadow: 0px 0px 10px 0px #000000;   
+}
+
+}
+@media (max-width: 480px) {
+  .lock{
+
+    height: 40vh;
+    width: 90vw;
+    margin-left: 5%;
+  }
+  .lock h1{
+    font-size: 50px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.midweek-invite-section{
+  width: 90vw;
+  margin-top: -15%;
+}
+.tie{
+  width: 90vw;
+}
+.tie h2{
+  font-size: 30px;
+}
+.tie h5{
+  font-size: 20px;
+}
+.midweek-invite-image{
+  width: 50vw;
+}
+.invite-description{
+  font-size: 10px;
+}
+  .type{
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  .cars1 img{
+    width: 70vw;
+    height: 30vh;
+    margin-top: 5%;
+  }
+  .map {
+
+    font-size: 20px;
     margin-top: 2%;
   }
+  .map iframe {
+  width: 80vw;
+  height: 40vh;
+  border: none;
+    box-shadow: 0px 0px 10px 0px #000000;   
 }
+}
+
+
