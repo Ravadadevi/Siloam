@@ -1120,7 +1120,7 @@ margin_top: 90%;
   .example-2 {
           margin-top: 50%;
     display: flex;
-   margin-left: 20%
+   
   }
   .example-2 .icon-content {
     margin: 0 10px;
@@ -1490,6 +1490,7 @@ button {
   width: 150px;
   align-self: flex-start;
 }
+
 
 button:hover {
   background-color: #3a2f5a;
