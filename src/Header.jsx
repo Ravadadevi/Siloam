@@ -1,6 +1,7 @@
 import React from "react";
 import './Header.css';
 import { useState } from "react";
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
 
@@ -32,8 +33,8 @@ const Header = () => {
       {/* Navigation Menu */}
       <div className={`head ${isMobileMenuOpen ? 'active' : ''}`}>
         <ul>
-          <li><a href="/home">Home</a></li>
-          <li><a href="/about">About</a></li>
+          <li><NavLink to="/home">Home</NavLink></li>
+          <li><NavLink to="/about">About</NavLink></li>
           <li><a href="/team">Team</a></li>
           <li><a href="/location">Location</a></li>
           <li><a href="/ourtrust"> Programs</a></li>
