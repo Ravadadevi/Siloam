@@ -205,6 +205,9 @@ em {
 
 
 @media screen and (max-width: 480px) {
+    .church {
+        padding: 2%;
+    }
   .logo h1 {
     font-size: 1.2rem;
   }
