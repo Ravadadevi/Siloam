@@ -18,6 +18,7 @@ function App() {
   return (
 
     <Router>
+       <Header /> 
       <Routes>
         <Route index element={<Home />} />
         <Route path="/home" element={<Home />} />
