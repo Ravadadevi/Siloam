@@ -705,6 +705,9 @@ justify-content: space-evenly;
 .title2{
   margin-top: -38%;
 }
+    .title2 p{
+        font-size: 15px;
+    }
 .title4 {
   text-align: center;
   margin-right: 15%;
