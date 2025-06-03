@@ -1,7 +1,7 @@
 import React from "react";
 import './Header.css';
 import { useState } from "react";
-import { NavLink } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 
 
 
@@ -43,9 +43,9 @@ const Header = () => {
           <li><NavLink to="/location">Location</NavLink></li>
           <li><NavLink to="/ourtrust"> Programs</NavLink></li>
           <li><NavLink to="/events">Events</NavLink></li> 
-         <NavLink to="/give" id="btnm1">
+         <Link to="/give" id="btnm1">
       Give Now
-    </NavLink>
+    </Link>
 
 
         </ul>
