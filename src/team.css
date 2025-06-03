@@ -213,7 +213,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("public/groups.jpeg");
+  background-image: url("/groups.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -265,7 +265,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("public/group.jpeg");
+  background-image: url("/group.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
