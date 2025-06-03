@@ -1225,6 +1225,8 @@ margin_top: 90%;
   .reach{
     margin-top: 2%; 
     font-size: 20px;
+      justify-content: center;
+      
   }
   .reach p {
     margin-top: 4%;
