@@ -154,7 +154,7 @@ body{
   }
   .welcome h1{
     font-size: 1rem;
-margin_top: 50%;
+margin_top: 60%;
   }
   .head2 img {
     width: 200px;
@@ -1332,7 +1332,7 @@ margin-bottom: 2%;
   .footer {
     background-color: #cecdcd; /* Change this to any color you prefer */
     height: auto;
-    padding-bottom: 170%;
+    padding-bottom: 190%;
   }
 
   .foot {
