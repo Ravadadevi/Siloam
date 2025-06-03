@@ -377,8 +377,8 @@ function Church() {
         </div>
         <hr />
             <div className="copy">
-                <p>Charity No. 1117019 | Registered in England & Wales No. 5996380.</p>
-                <p>© 2025 Renewal Church. All rights reserved.</p>
+                <p>Looma It Solutions PVT.Ltd</p>
+                <p>© 2025 siloam Church. All rights reserved.</p>
         </div>
     
 </div>
