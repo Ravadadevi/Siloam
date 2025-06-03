@@ -209,12 +209,15 @@ em {
         padding: 2%;
     }
   .logo h1 {
-    font-size: 0.8rem;
+    font-size: 18px;
   }
 
   em {
-    font-size: 0.5rem;
+    font-size: 14px ;
   }
+    .logo h1 span{
+        font-size: 10px;
+    }
   .head{
     height: fit-content;
     margin-top: -20%;
