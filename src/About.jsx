@@ -219,10 +219,11 @@ For the sin of this one man, Adam, caused death to rule over many. But even grea
           
         </div>
         <hr />
-            <div className="copy">
+                      <div className="copy">
                 <p>Charity No. 1117019 | Registered in England & Wales No. 5996380.</p>
                 <p>© 2025 Renewal Church. All rights reserved.</p>
         </div>
+
     
 </div>
 </div>
