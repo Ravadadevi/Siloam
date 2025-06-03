@@ -110,7 +110,7 @@ function Church() {
         </div>
   <br /><br />  <br /><br />
   <div className='welcome' style={{ textAlign: 'center', margin: '180px 0 40px 0' }}>
-    <h1 style={{ fontWeight: 400, fontSize: '2.8rem', marginBottom: 24 }}>
+    <h1 style={{ fontWeight: 400, fontSize: '2.8rem', marginBottom: 24 }}> <br /><br />
       Welcome to Siloam Chirst Ministries 
     </h1>
     <p style={{ fontSize: '1.15rem', color: '#333', marginBottom: 18 }}>
