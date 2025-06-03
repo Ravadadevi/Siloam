@@ -1120,8 +1120,7 @@ margin_top: 90%;
   .example-2 {
           margin-top: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+   margin-left: 20%
   }
   .example-2 .icon-content {
     margin: 0 10px;
