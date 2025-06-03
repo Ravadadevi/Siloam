@@ -43,10 +43,10 @@ const Header = () => {
           <li><NavLink to="/location">Location</NavLink></li>
           <li><NavLink to="/ourtrust"> Programs</NavLink></li>
           <li><NavLink to="/events">Events</NavLink></li> 
-          <<li>
+          <<li><NavLink to="/give">
   <button id='btnm1' onClick={() => navigate('/give')}>
     Give Now
-  </button>
+  </button>"></NavLink>
 </li>
 
         </ul>
