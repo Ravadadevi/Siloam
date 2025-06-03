@@ -34,11 +34,11 @@ function Locations(){
   <div className="midweek-invite-content">
     <p className="invite-subtitle">WE INVITE YOU TO</p>
     <h2 className="invite-title">
-      Join Us For Our Midweek<br />Bible Study!
+      Join Us For Our Weekend <br />Bible Study!
     </h2>
     <div className="invite-underline"></div>
     <p className="invite-description">
-      We invite you to our Midweek Service on Wednesday evenings at 7pm. All are welcome to come together and delve into the teachings of the Bible. Teen and Star Kid’s programs are available for your youth.
+      We invite you to our weekend Service on Sunday morning 9am evenings at 7pm. All are welcome to come together and delve into the teachings of the Bible. Teen and Star Kid’s programs are available for your youth.
     </p>
   </div>
   <div className="midweek-invite-image">
