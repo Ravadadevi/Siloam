@@ -32,7 +32,7 @@ const Header = () => {
       {/* Navigation Menu */}
       <div className={`head ${isMobileMenuOpen ? 'active' : ''}`}>
         <ul>
-          <li><a href="src/Home">Home</a></li>
+          <li><a href="/home">Home</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/team">Team</a></li>
           <li><a href="/location">Location</a></li>
