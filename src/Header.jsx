@@ -35,10 +35,10 @@ const Header = () => {
         <ul>
           <li><NavLink to="/home">Home</NavLink></li>
           <li><NavLink to="/about">About</NavLink></li>
-          <li><a href="/team">Team</a></li>
-          <li><a href="/location">Location</a></li>
-          <li><a href="/ourtrust"> Programs</a></li>
-          <li><a href="/events">Events</a></li> 
+          <li><NavLink to="/team">Team</NavLink></li>
+          <li><NavLink to="/location">Location</NavLink></li>
+          <li><NavLink to="/ourtrust"> Programs</NavLink></li>
+          <li><NavLink to="/events">Events</NavLink></li> 
           <button id='btnm1' onClick={() => window.location.href = '/give'}>
         Give Now
       </button>
