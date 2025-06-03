@@ -154,7 +154,7 @@ body{
   }
   .welcome h1{
     font-size: 1rem;
-
+margin_top: 50%;
   }
   .head2 img {
     width: 200px;
