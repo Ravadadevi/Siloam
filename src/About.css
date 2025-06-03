@@ -703,10 +703,11 @@ justify-content: space-evenly;
 
 }
 .title2{
-  margin-top: -38%;
+    
+  margin-top: -25%;
 }
     .title2 p{
-        font-size: 10px;
+        font-size: 13px;
     }
 .title4 {
   text-align: center;
