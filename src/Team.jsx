@@ -1,5 +1,5 @@
 import React from 'react';
-import './Team.css';
+import './team.css';
 import { useState } from 'react';
 import Header from './Header';
 
