@@ -3,6 +3,7 @@ import './Home.css';
 import Header from './Header';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 
 function Church() {
