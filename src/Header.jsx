@@ -2,13 +2,13 @@ import React from "react";
 import './Header.css';
 import { useState } from "react";
 import { NavLink } from 'react-router-dom';
-import { useNavigate } from "react-router-dom";
+
 
 
 const Header = () => {
 
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-        const navigate = useNavigate();
+       
 
     
       const toggleMobileMenu = () => {
@@ -44,7 +44,7 @@ const Header = () => {
           <li><NavLink to="/ourtrust"> Programs</NavLink></li>
           <li><NavLink to="/events">Events</NavLink></li> 
           <<li><NavLink to="/give">
-  <button id='btnm1' onClick={() => navigate('/give')}>
+  <button id='btnm1'>
     Give Now
   </button>"></NavLink>
 </li>
