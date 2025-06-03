@@ -38,7 +38,7 @@ function Locations(){
     </h2>
     <div className="invite-underline"></div>
     <p className="invite-description">
-      We invite you to our weekend Service on Sunday morning 9am evenings at 7pm. All are welcome to come together and delve into the teachings of the Bible. Teen and Star Kid’s programs are available for your youth.
+      We invite you to our weekend Service on Sunday morning 7am-10am and After that 10:30am-2pm and evenings at 6pm-9pm. All are welcome to come together and delve into the teachings of the Bible. Teen and Star Kid’s programs are available for your youth.
     </p>
   </div>
   <div className="midweek-invite-image">
