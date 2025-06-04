@@ -70,7 +70,8 @@ function Give() {
             <br /> 
             <div className="foot">
               <div>
-              <img src="/jesus.webp" alt="" />
+                            <img src="/jesuschrist.jpeg" alt="" />
+
               </div>
                 <div className="reach">
                 <h4>Reach us</h4>
@@ -143,8 +144,9 @@ function Give() {
         </div>
         <hr />
             <div className="copy">
-                <p>Charity No. 1117019 | Registered in England & Wales No. 5996380.</p>
-                <p>© 2025 Renewal Church. All rights reserved.</p>
+                              <p>Lomaa IT Solutions</p>
+                <p>© 2025 siloam Church. All rights reserved.</p>
+
         </div>
     
 </div>
