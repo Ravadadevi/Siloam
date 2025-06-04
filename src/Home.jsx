@@ -305,7 +305,7 @@ function Church() {
             <br /> 
             <div className="foot">
               <div>
-              <img src="/jesus.webp" alt="" />
+              <img src="/jesuschrist.jpeg" alt="" />
               </div>
                 <div className="reach">
                 <h4>Reach us</h4>
@@ -378,8 +378,8 @@ function Church() {
         </div>
         <hr />
             <div className="copy">
-                <p>Looma It Solutions PVT.Ltd</p>
-                <p>© 2025 siloam Church. All rights reserved.</p>
+                              <p>Lomaa IT Solutions</p>
+                            <p>© 2025 siloam Church. All rights reserved.</p>
         </div>
     
 </div>
