@@ -290,32 +290,7 @@ hr{
 display: flex;
 justify-content: space-between;
 }
-@media screen and (max-width: 1024px) {
-  .logo h1 {
-    font-size: 1.5rem;
-  }
 
-  em {
-    font-size: 1.2rem;
-  }
-
-  .head a {
-    font-size: 1rem;
-  }
-
-#btnm1 {
-    text-align: center;
-    font-size: 1.1rem;
-    font-weight: bold;
-    padding: 0.8em 2em;
-    letter-spacing: 0.5px;
-}
-.church{
-  flex-direction: row;
-  display: flex;
-}
-
-}
 
 @media (max-width: 768px) {
 .events{
@@ -326,7 +301,7 @@ justify-content: space-between;
   }
   .card {
     width: 300px;
-    height: 45vh;
+    height: 40vh;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
@@ -341,7 +316,7 @@ justify-content: space-between;
     font-weight: 600;
     margin-bottom: 0.5rem;
     text-align: center;
-    margin-top : -85%;
+    margin-top : -10%;
 }
 
 .desc {
@@ -349,7 +324,7 @@ justify-content: space-between;
     font-size: 0.875rem;
     text-align: center;
     margin-bottom: 1rem;
-     margin-top : -85%;
+     margin-top : -7%;
 
 }
 }
@@ -378,7 +353,7 @@ justify-content: space-between;
     font-weight: 600;
     margin-bottom: 0.5rem;
     text-align: center;
-    margin-top: -165%;
+    margin-top: -3%;
 }
 
 .desc {
@@ -386,7 +361,7 @@ justify-content: space-between;
     font-size: 0.875rem;
     text-align: center;
     margin-bottom: 1rem;
-    margin-top: -165%;
+    margin-top: -5%;
 
 }
 }
