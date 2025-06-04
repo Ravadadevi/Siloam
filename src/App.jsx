@@ -11,14 +11,13 @@ import Ourtrust from './Ourtrust';
 import Login from './Login';
 import Give from './Give';
 import Paymentform from './Paymentform';
-import Header from './Header';
 
 
 function App() {
   return (
 
     <Router>
-        <Header /> 
+      
       <Routes>
         <Route index element={<Home />} />
         <Route path="/home" element={<Home />} />
