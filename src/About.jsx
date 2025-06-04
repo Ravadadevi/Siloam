@@ -64,13 +64,13 @@ function About() {
     <p>Pastor</p>
   </div>
   <div className="title2">
-  <p>I was able to see this world until I was 18 years <br /> 
-  old,  then I accidentally swallowed a piece of grass <br />
+  <p>I was able to see this world until I was 18 years  
+  old,  then I accidentally swallowed a piece of grass 
   and  lost one of my eye.
-     When I used a transplant <br />to treat  it, I also lost the 
-     other eye... Since <br /> then, I have been completely blind. <br /> 
-    Now I can't see fully... but God has caught me and is<br />
-      using me  as a witness... I serve God as someone <br /> 
+     When I used a transplant to treat  it, I also lost the 
+     other eye... Since  then, I have been completely blind. 
+    Now I can't see fully... but God has caught me and is
+      using me  as a witness... I serve God as someone  
       who proclaims the love of Christ to many.</p>
   </div>
   </div>
@@ -87,7 +87,7 @@ function About() {
      serve God and to preach the gospel of His kingdom in His work 
      alone... I have left every work to proclaim the love of God 
      and His death and resurrection.
- <br /> I cannot help but proclaim the righteousness and truth that
+  I cannot help but proclaim the righteousness and truth that
   are in God, because I know that there is no one greater than him.
 </p>
   </div>
@@ -148,7 +148,7 @@ For the sin of this one man, Adam, caused death to rule over many. But even grea
             <br /> 
             <div className="foot">
               <div>
-              <img src="/jesus.webp" alt="" />
+              <img src="/jesuschrist.jpeg" alt="" />
               </div>
                 <div className="reach">
                 <h4>Reach us</h4>
@@ -221,7 +221,7 @@ For the sin of this one man, Adam, caused death to rule over many. But even grea
         </div>
         <hr />
  <div className="copy">
-                <p>Looma It Solutions PVT.Ltd</p>
+                <p>Lomaa IT Solutions</p>
                 <p>© 2025 siloam Church. All rights reserved.</p>
         </div>
 
