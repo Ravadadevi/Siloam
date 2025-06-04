@@ -2,7 +2,7 @@ import React from 'react';
 import './team.css';
 import { useState } from 'react';
 import Header from './Header';
-
+import { NavLink } from 'react-router-dom';
 
 function Team() {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -11,8 +11,6 @@ function Team() {
       setMobileMenuOpen(!isMobileMenuOpen);
     };
     
-  
-
     return (
       <>
       {/* church logo and menu starts here */}
@@ -69,7 +67,8 @@ function Team() {
             <br /> 
             <div className="foot">
               <div>
-              <img src="/jesus.webp" alt="" />
+                           <img src="/jesuschrist.jpeg" alt="" />
+
               </div>
                 <div className="reach">
                 <h4>Reach us</h4>
@@ -79,12 +78,12 @@ function Team() {
 
                 <div className="pages">
                     <h4>Pages</h4>
-                    <li><a href="/home">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/team">Team</a></li>
-            <li><a href="/location">Location</a></li>
-            <li><a href="/ourtrust"> Programs</a></li>
-            <li><a href="/events">Events</a></li>
+                     <li><NavLink to="/home">Home</NavLink></li>
+          <li><NavLink to="/about">About</NavLink></li>
+          <li><NavLink to="/team">Team</NavLink></li>
+          <li><NavLink to="/location">Location</NavLink></li>
+          <li><NavLink to="/ourtrust"> Programs</NavLink></li>
+          <li><NavLink to="/events">Events</NavLink></li> 
                 </div>
 
                 <div className="icons">
@@ -142,7 +141,7 @@ function Team() {
         </div>
         <hr />
               <div className="copy">
-                <p>Looma It Solutions PVT.Ltd</p>
+                <p>Lomaa IT Solutions</p>
                 <p>© 2025 siloam Church. All rights reserved.</p>
         </div>
     
