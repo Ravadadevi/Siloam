@@ -601,159 +601,232 @@ justify-content: space-evenly;
 
 /* Phones (max-width: 768px) */
 @media (max-width: 768px) {
-  .church5 h1 {
-    font-size: 32px;
-  }
+      .about1 {
+        height: 40vh;
+        width: 100%;
+    }
 
-  .church5 p {
-    font-size: 18px;
-    text-align: center;
-    padding: 0 10px;
-  }
-.about1{
-  height: 50vh;
-}
-.cor{
-  padding: 5%;
-  height: fit-content;
-}
-.title1{
-  margin-top: -13%;
+    .church5 h1 {
+        font-size: 32px;
+        width: 90%;
+    }
 
-}
-.title2{
-  margin-top: -10%;
-}
-.title4 {
-  text-align: center;
-  margin-bottom: -5%;
-}
-.title, .title3{
-  height: 70vh;
-}
-.title5{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  margin-top: 20px;
-  text-align: center;
-  border-radius: 12px;
-  min-height: 190px;
-  gap: 10px;
-}
-  .cot h1, .cor h1 {
-    font-size: 30px;
-  }
-.cardes, .cardes1, .cardes2 {
-    width: 70%;
-    height: 32vh;
-    padding: 20px;
-    margin-top: 10%;
-  }
-  .cardes p, .cardes1 p, .cardes2 p {
-    font-size: 20px;
-    padding: 1%;
-    box-sizing: border-box;
-    margin-top: 0;
-  }
-  
-  .title2 p, .title5 p {
-    font-size: 15px;
-    margin: 10px;
-    line-height: 1.4;
-  }
-.title5 {
-  order: 2; /* this makes it come after title4 */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 10px;
-  text-align: center;
-}
+    .church5 p {
+        font-size: 18px;
+        padding: 0 15px;
+    }
 
-.title4 {
-  order: 1; /* this makes it appear first */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.cart1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-  .img1 {
+    .cart, .cart1 {
+        width: 95%;
+        min-height: 250px;
+        flex-direction: column;
+        margin: 5% auto;
+        padding: 10px;
+    }
+.cart{
+  padding-top: 80%;
+ }
+ .cart1{
+  padding-top: 5%;
+  height: 60vh;
+ }
+    .belief-section {
+        padding: 30px 15px;
+        gap: 15px;
+    }
+
+    .belief-title {
+        font-size: 24px;
+    }
+
+    .belief-desc {
+        font-size: 16px;
+    }
+
+    .title, .title3 {
+        min-height: auto;
+        padding: 15px;
+    }
+    .title3{
+      flex-direction: column-reverse;
+    }
+.title4{
     width: 100%;
-    height: auto;
-  }
+}
+    .title1, .title4 {
+        margin: 15px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-  
+    .title1 img, .title4 img {
+        width: 120px;
+        height: 120px;
+        margin: 10px 0;
+    }
+
+    .title1 h2, .title4 h2 {
+        font-size: 22px;
+        margin-left: 4%;
+    }
+
+    .title1 p, .title4 p {
+        font-size: 18px;
+        margin-left: 2%;
+    }
+
+    .title2 p, .title5 p {
+        font-size: 17px;
+        margin: 10px auto;
+        width: 90%;
+        height: auto;
+        line-height: 1.4;
+    }
+
+    .title5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 10px auto;
+        min-height: auto;
+        gap: 10px;
+    }
+
+    .title5 .ramya {
+        margin-top: 5px;
+    }
+
+    .cardes, .cardes1, .cardes2 {
+        width: 90%;
+        min-height: 200px;
+        padding: 15px;
+        margin-top: 5%;
+    }
+
+    .cardes p, .cardes1 p, .cardes2 p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .cor {
+        min-height: 150px;
+        padding: 30px 15px;
+    }
+
+    .cor h1 {
+        font-size: 30px;
+    }
+
+    .img1 {
+        width: 100%;
+        height: auto;
+    }
+
 }
 @media (max-width: 480px){
-  .church5 h1 {
-    font-size: 25px;
-  }
-
-  .title1{
-  margin-top: 140%;
-
-}
-    .cart1, .cart{
-  width: 90%;
-  justify-content: center;
-  padding: 3%;
-  margin: 5%;
-}
-     .cart1{
-         margin-top: 5%;
-     }
-.title2{
-    
-  margin-top: -25%;
-}
-    .title2 p{
-        font-size: 13px;
+    .about1 {
+        height: 35vh;
     }
-.title4 {
-  text-align: center;
-  margin-right: 15%;
-  margin-bottom: -5%;
-    margin-top: -10%;
-    
+
+    .church5 h1 {
+        font-size: 25px;
+        width: 95%;
+    }
+
+    .church5 p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .cart, .cart1 {
+        width: 80%;
+        min-height: 230px;
+        margin: 5% auto;
+        padding: 10px;
+           text-align: center;
+
+    }
+    .cart{
+      padding-top: 125%;
+     }
+     .cart1{
+      padding-top: 7%;
+      height: 70vh;
+     }
+.title3{
+  flex-direction: column-reverse;
 }
-.title{
-  height: 130vh;
-}
- .title3{
-  height: 70vh;
-}
-.title5{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  margin-top: -20px;
-  text-align: center;
-  border-radius: 12px;
-  min-height: 190px;
-  gap: 10px;
-}
-.cardes, .cardes1, .cardes2 {
-    width: 100%;
-    height: 32vh;
-    padding: 20px;
-    margin-top: 10%;
-  }
-  .cardes p, .cardes1 p, .cardes2 p {
-    font-size: 20px;
-    padding: 1%;
-    box-sizing: border-box;
-    margin-top: 0;
-  }
-  
+    .belief-section {
+        padding: 20px 10px;
+    }
+
+    .belief-title {
+        font-size: 20px;
+    }
+
+    .belief-desc {
+        font-size: 14px;
+    }
+
+    .title, .title3 {
+        min-height: auto;
+        padding: 10px;
+    }
+    .title1, .title4 {
+        margin: 1px auto;
+        width: 100%;
+    }
+
+    .title1 img, .title4 img {
+        width: 100px;
+        height: 100px;
+        margin: 10px 0;
+    }
+
+    .title1 h2, .title4 h2 {
+        font-size: 18px;
+        margin-left: 4%;
+    }
+
+    .title1 p, .title4 p {
+        font-size: 14px;
+        margin-left: 2%;
+    }
+
+    .title2 p, .title5 p {
+        font-size: 13px;
+        margin: 10px auto;
+        width: 95%;
+        height: auto;
+    }
+
+    .title5 {
+        margin: 5px auto;
+        min-height: auto;
+    }
+
+    .cardes, .cardes1, .cardes2 {
+        width: 100%;
+        min-height: 250px;
+        padding: 10px;
+        margin-top: 5%;
+    }
+
+    .cardes p, .cardes1 p, .cardes2 p {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .cor {
+        min-height: 120px;
+        padding: 20px 10px;
+    }
+
+    .cor h1 {
+        font-size: 24px;
+    }
 }
