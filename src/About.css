@@ -5,30 +5,28 @@
     text-decoration: none;
 }
 
-
 .about1{
     background-image: url("/medium-shot-woman-praying-church.jpg");
-  height: 60vh;
-  width: 98.5vw;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-
+    height: 60vh;
+    width: 98.5vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
 }
+
 .about1::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black */
-  z-index: 1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
-
 
 .cart{
     width: 60%;
@@ -39,20 +37,22 @@
     background-color: #fff;
     margin-top: 5%;
     margin-left: 5%;
-    box-shadow: 0px 0px 10px 0px #000000;   
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
 }
+
 .church5 h1{
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  font-weight: 900;
-  font-size: 4rem;
-  font-family: var(--font-family);
-  width: 100%;
-  z-index: 2;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 4rem;
+    font-family: var(--font-family);
+    width: 100%;
+    z-index: 2;
 }
 
 .church5 p{
@@ -64,120 +64,100 @@
     align-items: center;
     margin-top: 2%;
 }
+
 .belief-section {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 40px;
-  background: #f8f9fa;
-  padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    background: #f8f9fa;
+    padding: 60px 0;
 }
 
 .belief-left {
-  flex: 1 1 0;
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2%;
+    flex: 1 1 0;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
 }
 
 .belief-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 18px;
-  border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+    border: none;
 }
 
 .belief-title {
-  font-size: 34px;
-  font-weight: 800;
-  color: #23b7b7;
-  text-align: center;
-  letter-spacing: 1px;
-  margin-bottom: 18px;
-  line-height: 1.1;
+    font-size: 34px;
+    font-weight: 800;
+    color: #23b7b7;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+    line-height: 1.1;
 }
 
 .belief-desc {
-  font-size: 20px;
-  color: #555;
-  text-align: center;
-  margin-bottom: 24px;
-  line-height: 1.5;
-  font-weight: 400;
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 24px;
+    line-height: 1.5;
+    font-weight: 400;
 }
 
 .belief-divider {
-  border: none;
-  border-top: 3px dashed #aaa;
-  margin: 36px auto 36px auto;
-  width: 80%;
-  height: 0;
+    border: none;
+    border-top: 3px dashed #aaa;
+    margin: 36px auto 36px auto;
+    width: 80%;
+    height: 0;
 }
 
 .belief-right {
-  flex: 1 1 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 50%;
-
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
 }
 
 .belief-image {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 10px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
-  object-fit: cover;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    object-fit: cover;
 }
 
-/* Responsive styles */
-@media (max-width: 900px) {
-  .belief-section {
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-    padding: 30px 0;
-  }
-  .belief-left, .belief-right {
-    max-width: 100%;
-    padding: 0 10px;
-  }
-  .belief-image {
-    max-width: 100%;
-    margin-top: 30px;
-  }
-  .belief-title {
-    font-size: 32px;
-  }
-  .belief-desc {
-    font-size: 16px;
-  }
-}
 .img1{
     width: 500px;
     height: 500px;
 }
 
 .title1 img{
-  margin-top: 5%;
+    margin-top: 5%;
     width: 250px;
     height: 250px;
     border-radius: 50% 50% 50% 50%;
 }
+
 .title{
     font-size: 20px;
     font-weight: 600;
     color: #333;
     display: flex;
-justify-content: space-evenly;
+    justify-content: space-evenly;
 }
+
 .title1{
-    margin-left: -10%;
+    margin-left: 3%;
 }
+
 .title1 h2{
     font-size: 30px;
     font-weight: 600;
@@ -186,6 +166,7 @@ justify-content: space-evenly;
     justify-content: center;
     align-items: center;
 }
+
 .title1 p{
     font-size: 20px;
     color: #333;
@@ -193,21 +174,24 @@ justify-content: space-evenly;
     justify-content: center;
     align-items: center;
 }
-.title2 p{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 10%;
-    margin-left: 3%;
-    width: 100%;
-    height: 15vh;
 
-    font-size: 20px;
-  color: #555;
-  text-align: center;
-  margin-bottom: 24px;
-  line-height: 1.5;
-  font-weight: 400;
+.title2{
+width: 100%;
 }
+
+.title2 p{
+    
+    margin-top: 10%;
+    width: 95%;
+    height: 17vh;
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 24px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
 .cart1{
     width: 60%;
     height: 43vh;
@@ -217,13 +201,8 @@ justify-content: space-evenly;
     background-color: #fff;
     margin-top: 5%;
     margin-left: 35%;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-}
-.cart{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-
+    border-radius: 6px;
 }
 
 .title4 img{
@@ -232,16 +211,19 @@ justify-content: space-evenly;
     border-radius: 50% 50% 50% 50%;
     margin-left: -25%;
 }
+
 .title3{
     font-size: 20px;
     font-weight: 600;
     color: #333;
     display: flex;
-justify-content: space-evenly;
+    justify-content: space-evenly;
 }
+
 .title4{
     margin-left: 3%;
 }
+
 .title4 h2{
     font-size: 30px;
     font-weight: 600;
@@ -250,8 +232,8 @@ justify-content: space-evenly;
     justify-content: center;
     align-items: center;
     margin-left: -35%;
-
 }
+
 .title4 p{
     font-size: 20px;
     color: #333;
@@ -259,8 +241,8 @@ justify-content: space-evenly;
     justify-content: center;
     align-items: center;
     margin-left: -35%;
-
 }
+
 .title5 p{
     font-size: 20px;
     font-weight: 400;
@@ -272,27 +254,29 @@ justify-content: space-evenly;
     height: 10vh;
     width: 80%;
 }
-.title5 .ramya{
-  font-size: 20px;
-  margin-top: -50px;
-  font-weight: 400;
-  color: #555;
 
+.title5 .ramya{
+    font-size: 20px;
+    margin-top: -50px;
+    font-weight: 400;
+    color: #555;
 }
 
 .cartss{
     margin-top: 4%;
 }
+
 .cardss{
     display: flex;
     justify-content: space-evenly;
 }
+
 .cardes {
     --bg: linear-gradient(45deg, #d5addd, #ffdd87);
     --hover-bg: #ffe5f4;
     --hover-text: #9e04ac;
-    width: 300PX;
-    height: 300PX;
+    width: 300px;
+    height: 300px;
     text-align: center;
     background: var(--bg);
     padding: 1.5em;
@@ -300,9 +284,7 @@ justify-content: space-evenly;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
-    transition:
-      0.3s cubic-bezier(0.6, 0.4, 0, 1),
-      transform 0.15s ease;
+    transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -313,22 +295,21 @@ justify-content: space-evenly;
     background-image: url("/mexican-people.avif");
     background-position: center;
     background-size: cover;
-    background-position: no-repeat;
-  }
-  
-  
-  .cardes > :not(p) {
+    background-repeat: no-repeat;
+}
+
+.cardes > :not(p) {
     transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1);
-  }
-  
-  .cardes > strong {
+}
+
+.cardes > strong {
     display: block;
     font-size: 1.4rem;
     letter-spacing: -0.035em;
     color: white;
-  }
-  
-  .cardes p {
+}
+
+.cardes p {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -341,28 +322,28 @@ justify-content: space-evenly;
     top: 100%;
     font-size: 15px;
     margin-top: 5%;
-  }
-  
-  .cardes:hover p {
+}
+
+.cardes:hover p {
     top: 0;
     font-size: 13px;
-  }
-  
-  .cardes:hover {
-    background: var(--hover-bg);
-  }
-  
-  .cardes:hover > div,
-  .cardes:hover > strong {
-    opacity: 0;
-  }
+}
 
-  .cardes1 {
-    --bg: linear-gradient(45deg, #d5addd, #ffdd87);;
+.cardes:hover {
+    background: var(--hover-bg);
+}
+
+.cardes:hover > div,
+.cardes:hover > strong {
+    opacity: 0;
+}
+
+.cardes1 {
+    --bg: linear-gradient(45deg, #d5addd, #ffdd87);
     --hover-bg: #ffe5f4;
     --hover-text: #9e04ac;
-    width: 300PX;
-    height: 300PX;
+    width: 300px;
+    height: 300px;
     text-align: center;
     background: var(--bg);
     padding: 1.5em;
@@ -370,9 +351,7 @@ justify-content: space-evenly;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
-    transition:
-      0.3s cubic-bezier(0.6, 0.4, 0, 1),
-      transform 0.15s ease;
+    transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -383,22 +362,21 @@ justify-content: space-evenly;
     background-image: url("/conceptual-image-focus-candle-light-with-man-hand-holding-wooden-cross-bible-blurred-world.jpg");
     background-position: center;
     background-size: cover;
-    background-position: no-repeat;
-  }
-  
-  
-  .cardes1 > :not(p) {
+    background-repeat: no-repeat;
+}
+
+.cardes1 > :not(p) {
     transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1);
-  }
-  
-  .cardes1 > strong {
+}
+
+.cardes1 > strong {
     display: block;
     font-size: 1.4rem;
     letter-spacing: -0.035em;
     color: white;
-  }
-  
-  .cardes1 p {
+}
+
+.cardes1 p {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -411,27 +389,28 @@ justify-content: space-evenly;
     top: 100%;
     font-size: 15px;
     margin-top: 5%;
-  }
-  
-  .cardes1:hover p {
+}
+
+.cardes1:hover p {
     top: 0;
     font-size: 13px;
-  }
-  
-  .cardes1:hover {
+}
+
+.cardes1:hover {
     background: var(--hover-bg);
-  }
-  
-  .cardes1:hover > div,
-  .cardes1:hover > strong {
+}
+
+.cardes1:hover > div,
+.cardes1:hover > strong {
     opacity: 0;
-  }
-  .cardes2 {
-    --bg: linear-gradient(45deg, #d5addd, #ffdd87);;
+}
+
+.cardes2 {
+    --bg: linear-gradient(45deg, #d5addd, #ffdd87);
     --hover-bg: #ffe5f4;
     --hover-text: #9e04ac;
-    width: 300PX;
-    height: 300PX;
+    width: 300px;
+    height: 300px;
     text-align: center;
     background: var(--bg);
     padding: 1.5em;
@@ -439,9 +418,7 @@ justify-content: space-evenly;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
-    transition:
-      0.3s cubic-bezier(0.6, 0.4, 0, 1),
-      transform 0.15s ease;
+    transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -452,22 +429,21 @@ justify-content: space-evenly;
     background-image: url("/priest-praying-church.jpg");
     background-position: center;
     background-size: cover;
-    background-position: no-repeat;
-  }
-  
-  
-  .cardes2 > :not(p) {
+    background-repeat: no-repeat;
+}
+
+.cardes2 > :not(p) {
     transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1);
-  }
-  
-  .cardes2 > strong {
+}
+
+.cardes2 > strong {
     display: block;
     font-size: 1.4rem;
     letter-spacing: -0.035em;
     color: white;
-  }
-  
-  .cardes2 p {
+}
+
+.cardes2 p {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -480,280 +456,429 @@ justify-content: space-evenly;
     top: 100%;
     font-size: 15px;
     margin-top: 5%;
-  }
-  
-  .cardes2:hover p {
+}
+
+.cardes2:hover p {
     top: 0;
     font-size: 13px;
-  }
-  
-  .cardes2:hover {
+}
+
+.cardes2:hover {
     background: var(--hover-bg);
-  }
-  
-  .cardes2:hover > div,
-  .cardes2:hover > strong {
+}
+
+.cardes2:hover > div,
+.cardes2:hover > strong {
     opacity: 0;
-  }
-  .cot{
+}
+
+.cor{
     height: 40vh;
-    background-color: #b3a4a4;
-    margin-top: -20%;
-  }
-  .cot h1{
+    background-color: rgba(245, 222, 179, 0.664);
+    margin-top: 4%;
+}
+
+.cor h1{
     font-size: 50px;
     font-weight: 800;
-    color: white;
+    color: rgb(66, 62, 62);
     text-align: center;
     align-items: center;
     margin-top: 3%;
-  }
-    .cor{
-      height: 40vh;
-      background-color:rgba(245, 222, 179, 0.664);
-      margin-top: 4%;
-    }
-    .cor h1{
-      font-size: 50px;
-      font-weight: 800;
-      color: rgb(66, 62, 62);
-      text-align: center;
-      align-items: center;
-      margin-top: 3%;
-    }
+}
 
 .hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  margin-top: 10px;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 .hamburger .bar {
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  margin: 4px 0;
-  transition: 0.4s;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
 }
 
-/* Hide menu on mobile by default */
 .head {
-  display: flex;
-  gap: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 .head ul {
-  display: flex;
-  gap: 5px;
-  list-style: none;
+    display: flex;
+    gap: 5px;
+    list-style: none;
 }
-
-
-/* Mobile First - default styles already cover larger screens */
 
 /* Tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
-  .cart, .cart1 {
-    width: 80%;
-    height: auto;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .about1 {
+        width: 100%;
+        height: 50vh;
+    }
 
-  .title, .title3 {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+    .church5 h1 {
+        font-size: 3rem;
+        width: 90%;
+    }
 
-  .title1, .title4 {
-    margin: 0 auto;
-  }
+    .church5 p {
+        font-size: 20px;
+        width: 90%;
+        padding: 0 15px;
+    }
 
-  .title1 img, .title4 img {
-    width: 180px;
-    height: 180px;
-  }
+    .cart, .cart1 {
+        width: 90%;
+        max-width: 600px;
+        min-height: 300px;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 20px;
+    }
 
-  .belief-section {
-    flex-direction: column;
-    padding: 40px 10px;
-  }
+    .belief-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 40px 20px;
+    }
 
-  .belief-left, .belief-right {
-    max-width: 100%;
-    padding: 0 10px;
-  }
+    .belief-left, .belief-right {
+        max-width: 100%;
+        padding: 0 20px;
+    }
 
-  .cardss {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
+    .belief-image {
+        max-width: 100%;
+        margin-top: 20px;
+    }
 
-  .cardes, .cardes1, .cardes2 {
-    width: 90%;
-    height: auto;
-  }
+    .belief-title {
+        font-size: 28px;
+    }
+
+    .belief-desc {
+        font-size: 18px;
+    }
+
+    .title, .title3 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .title1, .title4 {
+        margin: 20px auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title1 img, .title4 img {
+        width: 180px;
+        height: 180px;
+        margin: 10px 0;
+    }
+
+    .title1 h2, .title4 h2 {
+        font-size: 26px;
+    }
+
+    .title1 p, .title4 p {
+        font-size: 18px;
+    }
+
+    .title2 p, .title5 p {
+        font-size: 16px;
+        margin: 15px auto;
+        width: 90%;
+        height: auto;
+    }
+
+    .title5 .ramya {
+        margin-top: 10px;
+    }
+
+    .cardss {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .cardes, .cardes1, .cardes2 {
+        width: 80%;
+        min-height: 250px;
+        padding: 15px;
+        margin-top: 5%;
+    }
+
+    .cor {
+        min-height: 200px;
+        padding: 40px 20px;
+    }
+
+    .cor h1 {
+        font-size: 36px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .head ul {
+        display: none;
+    }
+
+    .head ul.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        gap: 15px;
+    }
 }
 
 /* Phones (max-width: 768px) */
 @media (max-width: 768px) {
-  .church5 h1 {
-    font-size: 32px;
-  }
-
-  .church5 p {
-    font-size: 18px;
-    text-align: center;
-    padding: 0 10px;
-  }
-.about1{
-  height: 50vh;
-}
-.cor{
-  padding: 5%;
-  height: fit-content;
-}
-.title1{
-  margin-top: -13%;
-
-}
-.title2{
-  margin-top: -10%;
-}
-.title4 {
-  text-align: center;
-  margin-bottom: -5%;
-}
-.title, .title3{
-  height: 70vh;
-}
-.title5{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  margin-top: 20px;
-  text-align: center;
-  border-radius: 12px;
-  min-height: 190px;
-  gap: 10px;
-}
-  .cot h1, .cor h1 {
-    font-size: 30px;
-  }
-.cardes, .cardes1, .cardes2 {
-    width: 70%;
-    height: 32vh;
-    padding: 20px;
-    margin-top: 10%;
-  }
-  .cardes p, .cardes1 p, .cardes2 p {
-    font-size: 20px;
-    padding: 1%;
-    box-sizing: border-box;
-    margin-top: 0;
-  }
-  
-  .title2 p, .title5 p {
-    font-size: 15px;
-    margin: 10px;
-    line-height: 1.4;
-  }
-.title5 {
-  order: 2; /* this makes it come after title4 */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.title4 {
-  order: 1; /* this makes it appear first */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.cart1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-  .img1 {
-    width: 100%;
-    height: auto;
-  }
-
-  
-}
-@media (max-width: 480px){
-  .church5 h1 {
-    font-size: 25px;
-  }
-
-  .title1{
-  margin-top: 140%;
-
-}
-    .cart1, .cart{
-  width: 90%;
-  justify-content: center;
-  padding: 3%;
-  margin: 5%;
-}
-     .cart1{
-         margin-top: 5%;
-     }
-.title2{
-    
-  margin-top: -25%;
-}
-    .title2 p{
-        font-size: 13px;
+    .about1 {
+        height: 40vh;
+        width: 100%;
     }
-.title4 {
-  text-align: center;
-  margin-right: 15%;
-  margin-bottom: -5%;
-    margin-top: -10%;
-    
+
+    .church5 h1 {
+        font-size: 32px;
+        width: 90%;
+    }
+
+    .church5 p {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+
+    .cart, .cart1 {
+        width: 95%;
+        min-height: 250px;
+        flex-direction: column;
+        margin: 5% auto;
+        padding: 10px;
+    }
+.cart{
+  padding-top: 80%;
+ }
+ .cart1{
+  padding-top: 5%;
+  height: 60vh;
+ }
+    .belief-section {
+        padding: 30px 15px;
+        gap: 15px;
+    }
+
+    .belief-title {
+        font-size: 24px;
+    }
+
+    .belief-desc {
+        font-size: 16px;
+    }
+
+    .title, .title3 {
+        min-height: auto;
+        padding: 15px;
+    }
+    .title3{
+      flex-direction: column-reverse;
+    }
+
+    .title1, .title4 {
+        margin: 15px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title1 img, .title4 img {
+        width: 120px;
+        height: 120px;
+        margin: 10px 0;
+    }
+
+    .title1 h2, .title4 h2 {
+        font-size: 22px;
+        margin-left: 4%;
+    }
+
+    .title1 p, .title4 p {
+        font-size: 18px;
+        margin-left: 2%;
+    }
+
+    .title2 p, .title5 p {
+        font-size: 17px;
+        margin: 10px auto;
+        width: 90%;
+        height: auto;
+        line-height: 1.4;
+    }
+
+    .title5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 10px auto;
+        min-height: auto;
+        gap: 10px;
+    }
+
+    .title5 .ramya {
+        margin-top: 5px;
+    }
+
+    .cardes, .cardes1, .cardes2 {
+        width: 90%;
+        min-height: 200px;
+        padding: 15px;
+        margin-top: 5%;
+    }
+
+    .cardes p, .cardes1 p, .cardes2 p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .cor {
+        min-height: 150px;
+        padding: 30px 15px;
+    }
+
+    .cor h1 {
+        font-size: 30px;
+    }
+
+    .img1 {
+        width: 100%;
+        height: auto;
+    }
 }
-.title{
-  height: 130vh;
+
+/* Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .about1 {
+        height: 35vh;
+    }
+
+    .church5 h1 {
+        font-size: 25px;
+        width: 95%;
+    }
+
+    .church5 p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .cart, .cart1 {
+        width: 80%;
+        min-height: 230px;
+        margin: 5% auto;
+        padding: 10px;
+           text-align: center;
+
+    }
+    .cart{
+      padding-top: 125%;
+     }
+     .cart1{
+      padding-top: 7%;
+      height: 70vh;
+     }
+.title3{
+  flex-direction: column-reverse;
 }
- .title3{
-  height: 70vh;
-}
-.title5{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  margin-top: -20px;
-  text-align: center;
-  border-radius: 12px;
-  min-height: 190px;
-  gap: 10px;
-}
-.cardes, .cardes1, .cardes2 {
-    width: 100%;
-    height: 32vh;
-    padding: 20px;
-    margin-top: 10%;
-  }
-  .cardes p, .cardes1 p, .cardes2 p {
-    font-size: 20px;
-    padding: 1%;
-    box-sizing: border-box;
-    margin-top: 0;
-  }
-  
+    .belief-section {
+        padding: 20px 10px;
+    }
+
+    .belief-title {
+        font-size: 20px;
+    }
+
+    .belief-desc {
+        font-size: 14px;
+    }
+
+    .title, .title3 {
+        min-height: auto;
+        padding: 10px;
+    }
+
+    .title1, .title4 {
+        margin: 1px auto;
+        width: 100%;
+    }
+
+    .title1 img, .title4 img {
+        width: 100px;
+        height: 100px;
+        margin: 10px 0;
+    }
+
+    .title1 h2, .title4 h2 {
+        font-size: 18px;
+        margin-left: 4%;
+    }
+
+    .title1 p, .title4 p {
+        font-size: 14px;
+        margin-left: 2%;
+    }
+
+    .title2 p, .title5 p {
+        font-size: 13px;
+        margin: 10px auto;
+        width: 95%;
+        height: auto;
+    }
+
+    .title5 {
+        margin: 5px auto;
+        min-height: auto;
+    }
+
+    .cardes, .cardes1, .cardes2 {
+        width: 100%;
+        min-height: 180px;
+        padding: 10px;
+        margin-top: 5%;
+    }
+
+    .cardes p, .cardes1 p, .cardes2 p {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .cor {
+        min-height: 120px;
+        padding: 20px 10px;
+    }
+
+    .cor h1 {
+        font-size: 24px;
+    }
 }
