@@ -18,7 +18,7 @@ function Give() {
     <div className="give">
       <div className="qr-section">
         <h3>Scan QR & directly give <br />
-          to the Siloam chief Ministries.</h3>
+          to the Siloam christ Ministries.</h3>
       </div>
 
       <div className="donation-form">
