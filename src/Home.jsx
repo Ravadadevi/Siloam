@@ -112,7 +112,7 @@ function Church() {
   <br /><br />  <br /><br />
   <div className='welcome' style={{ textAlign: 'center', margin: '180px 0 40px 0' }}>
     <h1 style={{ fontWeight: 400, fontSize: '2.8rem', marginBottom: 24 }}> <br /><br />
-      Welcome to Siloam Chirst Ministries 
+      Welcome to Siloam Christ Ministries 
     </h1>
     <p style={{ fontSize: '1.15rem', color: '#333', marginBottom: 18 }}>
       SILOAM exists to lead people to real transformation as they love God and change their world.
