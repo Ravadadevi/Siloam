@@ -22,7 +22,7 @@ const Header = () => {
           <img src="/logo.jpeg" alt="Church Logo" />
           <h1>
             SILOAM <em>CHRIST MINISTRIES </em> <br />
-            <span>Come And Grow With Us</span>
+            <span>Come and Grow With Us</span>
           </h1>
         </div>
 
